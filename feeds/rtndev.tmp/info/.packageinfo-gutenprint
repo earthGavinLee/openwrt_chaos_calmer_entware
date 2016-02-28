@@ -1,0 +1,24 @@
+Source-Makefile: feeds/rtndev/gutenprint/Makefile
+Package: gutenprint
+Submenu: Printing
+Version: 5.2.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcupsimage +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: gutenprint/host cups libiconv !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Build-Depends/host: libiconv/host
+Build-Types: host
+Section: utils
+Category: Utilities
+Title: Gutenprint CUPS drivers
+Maintainer: Entware team, entware.wl500g.info
+Source: gutenprint-5.2.10.tar.bz2
+Type: ipkg
+Description:  Gutenprint CUPS drivers for a wide range of Canon, Epson, HP and
+ compatible printers.
+http://gimp-print.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+

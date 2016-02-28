@@ -1,0 +1,19 @@
+Source-Makefile: feeds/oldports/bluez3-hcidump/Makefile
+Package: bluez3-hcidump
+Version: 1.42-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez3-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Bluetooth packet analyzer
+Maintainer: 
+Source: bluez-hcidump-1.42.tar.gz
+Type: ipkg
+Description: Bluetooth packet analyzer
+http://www.bluez.org/
+
+@@
+
+

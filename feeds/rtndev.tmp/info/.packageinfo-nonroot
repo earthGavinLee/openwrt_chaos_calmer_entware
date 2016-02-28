@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/nonroot/Makefile
+Package: nonroot
+Version: 20120608-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: run commands as non-root
+Maintainer: Entware team, entware.wl500g.info
+Source: nonroot-20120608.tar.bz2
+Type: ipkg
+Description:  This is a small utility for starting executables as a non-privileged user,
+ when running as the superuser (e.g. in an init-script).
+https://github.com/hampus/nonroot
+Entware team, entware.wl500g.info
+@@
+
+

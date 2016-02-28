@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/fuse-convmvfs/Makefile
+Package: fuse-convmvfs
+Submenu: Filesystem
+Version: 0.2.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libfuse +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: utils
+Category: Utilities
+Title: mirrors a whole filesystem tree from one charset to another
+Maintainer: Entware team, entware.wl500g.info
+Source: fuse-convmvfs-0.2.6.tar.gz
+Type: ipkg
+Description:  This is a filesystem converting file name from one character set to another. It's implemented by using FUSE.
+http://fuse-convmvfs.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+

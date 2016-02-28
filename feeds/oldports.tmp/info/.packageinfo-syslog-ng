@@ -1,0 +1,22 @@
+Source-Makefile: feeds/oldports/syslog-ng/Makefile
+Package: syslog-ng
+Version: 2.1.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +eventlog +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: admin
+Category: Administration
+Title: A powerful syslog daemon
+Maintainer: 
+Source: syslog-ng_2.1.4.tar.gz
+Type: ipkg
+Description: 	syslog-ng reads and logs messages to the system console, log
+	files, other machines and/or users as specified by its
+	configuration file.
+http://www.balabit.com/products/syslog_ng/
+
+@@
+
+

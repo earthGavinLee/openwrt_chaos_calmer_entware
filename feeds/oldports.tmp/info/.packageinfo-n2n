@@ -1,0 +1,19 @@
+Source-Makefile: feeds/oldports/n2n/Makefile
+Package: n2n
+Submenu: VPN
+Version: 2.1.0-20130823-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: VPN tunneling daemon
+Maintainer: 
+Source: n2n-2.1.0-20130823.tar.bz2
+Type: ipkg
+Description: VPN tunneling daemon
+
+@@
+
+

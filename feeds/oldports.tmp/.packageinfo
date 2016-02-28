@@ -1,0 +1,4373 @@
+Source-Makefile: feeds/oldports/amule/Makefile
+Package: amule
+Submenu: P2P
+Version: 2.3.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpng +libpthread +libncurses +libreadline +libwxbase +libcryptoxx +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libgd !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: A multi-platform eMule-like ed2k client
+Maintainer: 
+Source: aMule-2.3.1.tar.bz2
+Type: ipkg
+Description: A multi-platform eMule-like ed2k client
+http://www.amule.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/arpwatch/Makefile
+Package: arpwatch
+Version: 2.1a15-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Ethernet station activity monitor
+Maintainer: 
+Source: arpwatch-2.1a15.tar.gz
+Type: ipkg
+Description: 	Ethernet monitor program for keeping track of ethernet/ip address
+	pairings.
+http://www-nrg.ee.lbl.gov/
+
+@@
+
+
+Source-Makefile: feeds/oldports/at/Makefile
+Package: at
+Version: 3.1.16-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Delayed job execution and batch processing
+Maintainer: Luka Perkov <openwrt@lukaperkov.net>
+Source: at_3.1.16.orig.tar.gz
+Type: ipkg
+Description:  At and batch read shell commands from standard input storing them as a job to
+ be scheduled for execution in the future.
+http://packages.debian.org/stable/at
+Luka Perkov <openwrt@lukaperkov.net>
+@@
+
+
+Source-Makefile: feeds/oldports/autossh/Makefile
+Package: autossh
+Submenu: SSH
+Version: 1.4e-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Autossh client
+Maintainer: 
+Source: autossh-1.4e.tgz
+Type: ipkg
+Description: Autossh client
+http://www.harding.motd.ca/autossh/
+
+@@
+
+
+Source-Makefile: feeds/oldports/bitlbee/Makefile
+Package: bitlbee
+Submenu: Instant Messaging
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +glib2 +libgcrypt +libotr +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: glib2 !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: IRC gateway to IM chat networks
+Maintainer: 
+Source: bitlbee-3.2.tar.gz
+Type: ipkg
+Description: IRC gateway to IM chat networks
+http://www.bitlbee.org/
+
+@@
+Config:
+  source "feeds/oldports/bitlbee/Config.in"
+@@
+
+
+Source-Makefile: feeds/oldports/bluez3-hcidump/Makefile
+Package: bluez3-hcidump
+Version: 1.42-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez3-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Bluetooth packet analyzer
+Maintainer: 
+Source: bluez-hcidump-1.42.tar.gz
+Type: ipkg
+Description: Bluetooth packet analyzer
+http://www.bluez.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/bluez3-libs/Makefile
+Package: bluez3-libs
+Version: 3.36-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Bluetooth library
+Maintainer: 
+Source: bluez-libs-3.36.tar.gz
+Type: ipkg
+Description: Bluetooth library
+http://www.bluez.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/bluez3-utils/Makefile
+Package: bluez3-utils
+Version: 3.36-12
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez3-libs +libpthread +dbus +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: utils
+Category: Utilities
+Title: Bluetooth utilities
+Maintainer: 
+Source: bluez-utils-3.36.tar.gz
+Type: ipkg
+Description: Bluetooth utilities
+http://www.bluez.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/btpd/Makefile
+Package: btpd
+Submenu: BitTorrent
+Version: 0.16-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: btpd - BitTorrent Protocol Daemon
+Maintainer: 
+Source: btpd-0.16.tar.gz
+Type: ipkg
+Description: 	BTPD is a bittorrent client consisting of a daemon and client commands,
+	which can be used to read and/or manipulate the daemon state.
+	The daemon is capable of running several torrents simultaneously and
+	only uses one tcp port.
+	It's fairly low on resource usage and should be perfect for file
+	distribution sites.
+	Efficient downloads and ease of use makes this client a good choice for
+	the casual user as well.
+https://github.com/btpd/btpd/wiki/
+
+@@
+
+
+Source-Makefile: feeds/oldports/cgilib/Makefile
+Package: cgilib
+Version: 0.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libltdl
+Section: libs
+Category: Libraries
+Title: Simple CGI Library
+Maintainer: 
+Source: cgilib-0.7.tar.gz
+Type: ipkg
+Description: Simple CGI Library
+http://www.infodrom.org/projects/cgilib/
+
+@@
+
+
+Source-Makefile: feeds/oldports/cksfv/Makefile
+Package: cksfv
+Version: 1.3.14-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: cksfv CRC32 checksum verification tool
+Maintainer: 
+Source: cksfv-1.3.14.tar.gz
+Type: ipkg
+Description:   cksfv is a tool for verifying CRC32 checksums.
+http://zakalwe.fi/~shd/foss/cksfv/
+
+@@
+
+
+Source-Makefile: feeds/oldports/cups/Makefile
+Package: cups
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsmime +libcupscgi +libcupsppdc +libcupsimage +libusb-1.0
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Common UNIX Printing System (daemon)
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System (daemon)
+http://www.cups.org/
+
+@@
+
+Package: libcups
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread +libpng +libjpeg +libssp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Common UNIX Printing System - Core library
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - Core library
+http://www.cups.org/
+
+@@
+
+Package: libcupscgi
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Common UNIX Printing System - CGI library
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - CGI library
+http://www.cups.org/
+
+@@
+
+Package: libcupsimage
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libpng +libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Common UNIX Printing System - Image library
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - Image library
+http://www.cups.org/
+
+@@
+
+Package: libcupsmime
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Common UNIX Printing System - MIME library
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - MIME library
+http://www.cups.org/
+
+@@
+
+Package: libcupsppdc
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Common UNIX Printing System - PPDC library
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - PPDC library
+http://www.cups.org/
+
+@@
+
+Package: cups-bsd
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Common UNIX Printing System - BSD commands (old)
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - BSD commands (old)
+http://www.cups.org/
+
+@@
+
+Package: cups-client
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcups +libcupsimage +libcupsmime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Common UNIX Printing System - Client commands
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - Client commands
+http://www.cups.org/
+
+@@
+
+Package: cups-ppdc
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcupsppdc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Common UNIX Printing System - PPDC utils
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - PPDC utils
+http://www.cups.org/
+
+@@
+
+Package: cups-locales
+Submenu: Printing
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Common UNIX Printing System - Locales
+Maintainer: 
+Source: cups-2.0.3-source.tar.bz2
+Type: ipkg
+Description: 	Common UNIX Printing System - Locales
+http://www.cups.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/curlftpfs/Makefile
+Package: curlftpfs
+Submenu: Filesystem
+Version: 0.9.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libfuse +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libiconv !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: CurlFtpFS
+Maintainer: 
+Source: curlftpfs-0.9.2.tar.gz
+Type: ipkg
+Description:   CurlFtpFS is a filesystem for accessing FTP hosts
+  based on FUSE and libcurl.
+http://curlftpfs.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/cutter/Makefile
+Package: cutter
+Version: 1.04-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: allows an user to abort TCP/IP connections
+Maintainer: 
+Source: cutter-1.04.tgz
+Type: ipkg
+Description: 	Cutter is an open source program that allows Linux firewall
+	administrators to abort TCP/IP connections routed over the
+	firewall or router on which it is run.
+http://www.lowth.com/cutter/
+
+@@
+
+
+Source-Makefile: feeds/oldports/darkstat/Makefile
+Package: darkstat
+Version: 3.0.719-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Network bandwidth monitor
+Maintainer: 
+Source: darkstat-3.0.719.tar.bz2
+Type: ipkg
+Description: darkstat is a packet sniffer that runs as a background process on a cable/DSL
+router, gathers all sorts of statistics about network usage, and serves them
+over HTTP.
+http://unix4lyfe.org/darkstat/
+
+@@
+
+
+Source-Makefile: feeds/oldports/devmem2/Makefile
+Package: devmem2
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Simple program to read/write from memory.
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Simple program to read/write from/to any location in memory.
+
+@@
+
+
+Source-Makefile: feeds/oldports/dialog/Makefile
+Package: dialog
+Version: 1.2-20150528-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Dialog
+Maintainer: 
+Source: dialog-1.2-20150528.tgz
+Type: ipkg
+Description:  A script-interpreter which provides a set of curses widgets.
+http://invisible-island.net/dialog/
+
+@@
+
+
+Source-Makefile: feeds/oldports/digitemp/Makefile
+Package: digitemp
+Version: 3.6.0-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: DigiTemp is a simple to use program for reading values from 1-wire devices. (serial version)
+Maintainer: 
+Source: digitemp-3.6.0.tar.gz
+Type: ipkg
+Description: 	DigiTemp is a simple to use program for reading values from 1-wire devices.
+	Its main use is for reading temperature sensors, but it also reads counters,
+	and understands the 1-wire hubs with devices on different branches of the network.
+	This package is build without USB support.
+http://www.digitemp.com
+
+@@
+
+Package: digitemp-usb
+Version: 3.6.0-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: DigiTemp is a simple to use program for reading values from 1-wire devices. (USB version)
+Maintainer: 
+Source: digitemp-3.6.0.tar.gz
+Type: ipkg
+Description: 	DigiTemp is a simple to use program for reading values from 1-wire devices.
+	Its main use is for reading temperature sensors, but it also reads counters,
+	and understands the 1-wire hubs with devices on different branches of the network.
+	This package is build with USB support.
+http://www.digitemp.com
+
+@@
+
+
+Source-Makefile: feeds/oldports/dsniff/Makefile
+Package: dsniff
+Version: 2.4b1-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libnids +libnet0 +libopenssl +libgdbm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A collection of tools for network auditing and penetration testing
+Maintainer: 
+Source: dsniff-2.4b1.tar.gz
+Type: ipkg
+Description: 	A collection of tools for network auditing and penetration testing.
+http://www.monkey.org/~dugsong/dsniff/
+
+@@
+
+
+Source-Makefile: feeds/oldports/dstat/Makefile
+Package: dstat
+Version: 0.7.2-1a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Versatile resource statistics tool
+Maintainer: 
+Source: dstat-0.7.2.tar.bz2
+Type: ipkg
+Description:   Dstat is a versatile replacement for vmstat, iostat, netstat
+  and ifstat. Dstat overcomes some of their limitations and
+  adds some extra features, more counters and flexibility.
+  Dstat is handy for monitoring systems during performance
+  tuning tests, benchmarks or troubleshooting.
+http://dag.wieers.com/home-made/dstat/
+
+@@
+
+
+Source-Makefile: feeds/oldports/dtach/Makefile
+Package: dtach
+Version: 0.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: A program that emulates the dtach feature of screen
+Maintainer: 
+Source: dtach-0.8.tar.gz
+Type: ipkg
+Description: 	dtach is a tiny program that emulates the detach feature of screen,
+	allowing you to run a program in an environment that is protected from
+	the controlling terminal and attach to it later. dtach does not keep
+	track of the contents of the screen, and thus works best with programs
+	that know how to redraw themselves.
+http://dtach.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/eggdrop/Makefile
+Package: eggdrop
+Version: 1.6.21-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +tcl +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: EggDrop IRC BOT
+Maintainer: 
+Source: eggdrop1.6.21.tar.bz2
+Type: ipkg
+Description: 	EggDrop IRC BOT
+http://www.eggheads.org
+
+@@
+
+
+Source-Makefile: feeds/oldports/elinks/Makefile
+Package: elinks
+Version: 0.12pre6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +zlib +libidn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A text based web browser
+Maintainer: 
+Source: elinks-0.12pre6.tar.bz2
+Type: ipkg
+Description: An advanced text based web browser
+http://elinks.or.cz/
+
+@@
+
+
+Source-Makefile: feeds/oldports/empty/Makefile
+Package: empty
+Version: 0.6.19b-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Run applications under pseudo-terminal sessions
+Maintainer: 
+Source: empty-0.6.19b.tgz
+Type: ipkg
+Description:  empty is an utility that provides an interface to execute and/or interact
+ with processes under pseudo-terminal sessions (PTYs). This tool is
+ definitely useful in programming of shell scripts designed to communicate
+ with interactive programs like telnet, ssh, ftp, etc. In some cases, empty
+ can be the simplest replacement for TCL/expect or other similar
+ programming tools.
+http://empty.sourceforge.net
+
+@@
+
+
+Source-Makefile: feeds/oldports/fetchmail/Makefile
+Package: fetchmail
+Version: 6.3.26-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ssl
+Section: mail
+Category: Mail
+Title: Remote mail retriever (with SSL support)
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Source: fetchmail-6.3.26.tar.xz
+Type: ipkg
+Description:   Retrieves remote mail via POP/IMAP.
+ Very useful in conjunction with mutt.
+ This package is built with SSL support.
+http://fetchmail.berlios.de/
+Peter Wagner <tripolar@gmx.at>
+@@
+
+Package: fetchmail-nossl
+Version: 6.3.26-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: nossl
+Section: mail
+Category: Mail
+Title: Remote mail retriever (without SSL support)
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Source: fetchmail-6.3.26.tar.xz
+Type: ipkg
+Description:   Retrieves remote mail via POP/IMAP.
+ Very useful in conjunction with mutt.
+ This package is built without SSL support.
+http://fetchmail.berlios.de/
+Peter Wagner <tripolar@gmx.at>
+@@
+
+
+Source-Makefile: feeds/oldports/findutils/Makefile
+Package: findutils
+Version: 4.5.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: File finding utilities
+Maintainer: Entware team, entware.wl500g.info
+Source: findutils_4.5.14.orig.tar.gz
+Type: ipkg
+Description:  GNU Find Utilities are the basic directory searching utilities of the GNU OS.
+http://ftp.debian.org/debian/pool/main/f/findutils
+Entware team, entware.wl500g.info
+@@
+
+Package: findutils-locate
+Version: 4.5.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +findutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: File finding utilities (locate and relative utils)
+Maintainer: Entware team, entware.wl500g.info
+Source: findutils_4.5.14.orig.tar.gz
+Type: ipkg
+Description:  locate, updatedb is a part of GNU Find Utilities.
+http://ftp.debian.org/debian/pool/main/f/findutils
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/oldports/flite/Makefile
+Package: flite
+Version: 1.4-release-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: sound
+Category: Sound
+Title: Text-to-speech for embedded systems
+Maintainer: 
+Source: flite-1.4-release.tar.bz2
+Type: ipkg
+Description: Festival Lite is a stripped down version of Festival,
+	the well-developed text-to-speech program written in C++.
+	This program is written in C to keep memory usage low.
+http://www.speech.cs.cmu.edu/flite/index.html
+
+@@
+
+
+Source-Makefile: feeds/oldports/fprobe/Makefile
+Package: fprobe
+Version: 1.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: NetFlow probe (libpcap-based)
+Maintainer: 
+Source: fprobe-1.1.tar.bz2
+Type: ipkg
+Description: NetFlow probe (libpcap-based)
+http://fprobe.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/gawk/Makefile
+Package: gawk
+Version: 4.1.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: GAWK
+Maintainer: 
+Source: gawk-4.1.3.tar.gz
+Type: ipkg
+Description: 	GNU version of AWK.
+http://www.gnu.org/software/gawk/
+
+@@
+
+
+Source-Makefile: feeds/oldports/gpgme/Makefile
+Package: libgpgme
+Version: 1.5.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gnupg +libassuan +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: argp-standalone
+Section: libs
+Category: Libraries
+Title: GnuPG Made Easy library
+Maintainer: 
+Source: gpgme-1.5.5.tar.bz2
+Type: ipkg
+Description:   GnuPG Made Easy (GPGME) is a library designed to make access to GnuPG easier for
+  applications. It provides a High-Level Crypto API for encryption, decryption, signing,
+  signature verification and key management. Currently it uses GnuPG as its backend but
+  the API isn't restricted to this engine; in fact we have already developed a backend
+  for CMS (S/MIME).
+http://www.gnupg.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/gw6c/Makefile
+Package: gw6c
+Version: 6.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: IPv6 tunnel client software
+Maintainer: 
+Source: gw6c-6_0-RELEASE-src.tar
+Type: ipkg
+Description:   Client to configure an IPv6 tunnel to
+  Hexago/freenet6/go6.net's migration broker.
+http://www.go6.net
+
+@@
+
+
+Source-Makefile: feeds/oldports/gzip/Makefile
+Package: gzip
+Version: 1.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: gzip (GNU zip) is a compression utility.
+Maintainer: 
+Source: gzip-1.6.tar.gz
+Type: ipkg
+Description: 	gzip (GNU zip) is a compression utility designed to be a replacement for compress.
+http://www.gzip.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/hplip/Makefile
+Package: hplip
+Version: 3.15.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libtiff +libusb-compat +cups +sane-libs +dbus +python +libcupsimage
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: HP Linux Imaging and Printing
+Maintainer: 
+Source: hplip-3.15.7.tar.gz
+Type: ipkg
+Description: 	HPLIP is an HP developed solution for printing, scanning, and faxing with HP inkjet and laser based printers in Linux.
+http://sourceforge.net/projects/hplip/
+
+@@
+
+
+Source-Makefile: feeds/oldports/httping/Makefile
+Package: httping
+Version: 2.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ssl
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Httping is like 'ping' but for http-requests (with SSL support)
+Maintainer: 
+Source: httping-2.4.tgz
+Type: ipkg
+Description: 		Give it an url, and it'll show you how long it takes to connect, send a
+	request and retrieve the reply (only the headers). Be aware that the
+	transmission across the network also takes time!
+	This package is built with SSL support.
+http://www.vanheusden.com/httping/
+
+@@
+
+Package: httping-nossl
+Version: 2.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: nossl
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Httping is like 'ping' but for http-requests (without SSL support)
+Maintainer: 
+Source: httping-2.4.tgz
+Type: ipkg
+Description: 		Give it an url, and it'll show you how long it takes to connect, send a
+	request and retrieve the reply (only the headers). Be aware that the
+	transmission across the network also takes time!
+	This package is built without SSL support.
+http://www.vanheusden.com/httping/
+
+@@
+
+
+Source-Makefile: feeds/oldports/id3lib/Makefile
+Package: id3lib
+Version: 3.8.3-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv
+Section: libs
+Category: Libraries
+Title: An ID3v1/ID3v2 tag manipulation library
+Maintainer: 
+Source: id3lib-3.8.3.tar.gz
+Type: ipkg
+Description: An ID3v1/ID3v2 tag manipulation library
+http://www.id3lib.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/ifenslave/Makefile
+Package: ifenslave
+Version: 2.6.22-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A utility to manipulate kernel ethernet bonding devices
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:  ifenslave is needed to add/remove interfaces to/from ethernet bond devices.
+http://www.kernel.org
+
+@@
+
+
+Source-Makefile: feeds/oldports/imagemagick/Makefile
+Package: imagemagick
+Version: 6.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libltdl +libjpeg +libtiff +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: imagemagick
+Maintainer: 
+Source: ImageMagick-6.9.1-10.tar.bz2
+Type: ipkg
+Description:   An image manipulation library.
+http://image_magick.veidrodis.com/
+
+@@
+
+Package: imagemagick-tools
+Version: 6.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +imagemagick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: imagemagick (tools)
+Maintainer: 
+Source: ImageMagick-6.9.1-10.tar.bz2
+Type: ipkg
+Description: imagemagick (tools)
+http://image_magick.veidrodis.com/
+
+@@
+
+Package: imagemagick-jpeg
+Version: 6.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +imagemagick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: imagemagick (jpeg)
+Maintainer: 
+Source: ImageMagick-6.9.1-10.tar.bz2
+Type: ipkg
+Description:   imagemagick JPEG module
+http://image_magick.veidrodis.com/
+
+@@
+
+Package: imagemagick-png
+Version: 6.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +imagemagick +libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: imagemagick (png)
+Maintainer: 
+Source: ImageMagick-6.9.1-10.tar.bz2
+Type: ipkg
+Description:   imagemagick tools (mogrify,convert)
+http://image_magick.veidrodis.com/
+
+@@
+
+Package: imagemagick-tiff
+Version: 6.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +imagemagick
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: imagemagick (tiff)
+Maintainer: 
+Source: ImageMagick-6.9.1-10.tar.bz2
+Type: ipkg
+Description:   imagemagick TIFF module
+http://image_magick.veidrodis.com/
+
+@@
+
+
+Source-Makefile: feeds/oldports/imapfilter/Makefile
+Package: imapfilter
+Version: 2.6.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua +libopenssl +libpcre
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: mail
+Category: Mail
+Title: IMAP server based email filtering
+Maintainer: 
+Source: imapfilter-2.6.2.tar.bz2
+Type: ipkg
+Description: 	IMAPFilter is a mail filtering utility. It connects to remote mail
+	servers using the Internet Message Access Protocol (IMAP), sends
+	searching queries to the server and processes mailboxes based on the
+	results. It can be used to delete, copy, move, flag, etc. messages
+	residing in mailboxes at the same or different mail servers. The 4rev1
+	and 4 versions of the IMAP protocol are supported.
+
+	IMAPFilter uses the Lua programming language as a configuration and
+	extension language.
+http://github.com/lefcha/imapfilter
+
+@@
+
+
+Source-Makefile: feeds/oldports/ink/Makefile
+Package: ink
+Version: 0.5.2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libinklevel
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: A utility for reading ink levels
+Maintainer: 
+Source: ink-0.5.2.tar.gz
+Type: ipkg
+Description: A utility for reading ink levels
+http://ink.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/ipcad/Makefile
+Package: ipcad
+Version: 3.7.3-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: listens for traffic on the specified interfaces
+Maintainer: 
+Source: ipcad-3.7.3.tar.gz
+Type: ipkg
+Description: 	This daemon listens for traffic on the specified interfaces.
+	It has the built-in RSH and NetFlow engines to allow exporting
+	the accounting data the same way as Cisco routers do.
+http://lionet.info/ipcad/
+
+@@
+
+
+Source-Makefile: feeds/oldports/iproute2-legacy/Makefile
+Package: ip-legacy
+Submenu: Routing and Redirection
+Version: 2.6.39-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Routing control utility
+Maintainer: Entware team, entware.wl500g.info
+Source: iproute2-2.6.39.tar.gz
+Type: ipkg
+Description: Routing control utility
+http://linux-net.osdl.org/index.php/Iproute2
+Entware team, entware.wl500g.info
+@@
+
+Package: tc-legacy
+Version: 2.6.39-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Traffic control utility
+Maintainer: Entware team, entware.wl500g.info
+Source: iproute2-2.6.39.tar.gz
+Type: ipkg
+Description: Traffic control utility
+http://linux-net.osdl.org/index.php/Iproute2
+Entware team, entware.wl500g.info
+@@
+
+Package: genl-legacy
+Version: 2.6.39-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: General netlink utility frontend
+Maintainer: Entware team, entware.wl500g.info
+Source: iproute2-2.6.39.tar.gz
+Type: ipkg
+Description: General netlink utility frontend
+http://linux-net.osdl.org/index.php/Iproute2
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/oldports/ipset4/Makefile
+Package: ipset4
+Version: 4.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: IPset v4 administration utility
+Maintainer: Entware team, entware.wl500g.info
+Source: ipset-4.5.tar.bz2
+Type: ipkg
+Description: IPset v4 administration utility
+http://ipset.netfilter.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/oldports/iptraf/Makefile
+Package: iptraf
+Version: 3.0.1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A console-based network monitoring program
+Maintainer: 
+Source: iptraf-3.0.1.tar.gz
+Type: ipkg
+Description:   IPTraf is a console-based network statistics utility for Linux. It gathers a
+  variety of figures such as TCP connection packet and byte counts, interface
+  statistics and activity indicators, TCP/UDP traffic breakdowns, and LAN
+  station packet and byte counts.
+http://iptraf.seul.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/ipv6calc/Makefile
+Package: ipv6calc
+Version: 0.99.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: full
+Section: net
+Category: Network
+Title: IPv6 addresses calculations (full)
+Maintainer: 
+Source: ipv6calc-0.99.0.tar.gz
+Type: ipkg
+Description:     ipv6calc is a small utility written in programming languate C to manipulate
+  (not only) IPv6 addresses. Intentions were convering a given IPv6 address
+  into compressed format, convering a given IPv6 address into the same format
+  like shown in /proc/net/if_inet6 and (because it was not difficulty)
+  migrating the Perl program ip6_int into. Now only one utiltity is needed to
+  do a lot.
+  This package contains an ipv6calc with the internal databases enabled.
+http://www.deepspace6.net/projects/ipv6calc.html
+
+@@
+
+Package: ipv6calc-mini
+Version: 0.99.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mini
+Section: net
+Category: Network
+Title: IPv6 addresses calculations (mini)
+Maintainer: 
+Source: ipv6calc-0.99.0.tar.gz
+Type: ipkg
+Description:     ipv6calc is a small utility written in programming languate C to manipulate
+  (not only) IPv6 addresses. Intentions were convering a given IPv6 address
+  into compressed format, convering a given IPv6 address into the same format
+  like shown in /proc/net/if_inet6 and (because it was not difficulty)
+  migrating the Perl program ip6_int into. Now only one utiltity is needed to
+  do a lot.
+  This package contains an ipv6calc with the internal databases disabled.
+http://www.deepspace6.net/projects/ipv6calc.html
+
+@@
+
+Package: ipv6log
+Version: 0.99.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: full
+Section: net
+Category: Network
+Title: Webserver log helper programs (full)
+Maintainer: 
+Source: ipv6calc-0.99.0.tar.gz
+Type: ipkg
+Description:     ipv6calc is a small utility written in programming languate C to manipulate
+  (not only) IPv6 addresses. Intentions were convering a given IPv6 address
+  into compressed format, convering a given IPv6 address into the same format
+  like shown in /proc/net/if_inet6 and (because it was not difficulty)
+  migrating the Perl program ip6_int into. Now only one utiltity is needed to
+  do a lot.
+  This package contains webserver log anonymization, conversion, and statistics
+  helper programs with the internal databases enabled.
+http://www.deepspace6.net/projects/ipv6calc.html
+
+@@
+
+Package: ipv6log-mini
+Version: 0.99.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mini
+Section: net
+Category: Network
+Title: Webserver log helper programs (mini)
+Maintainer: 
+Source: ipv6calc-0.99.0.tar.gz
+Type: ipkg
+Description:     ipv6calc is a small utility written in programming languate C to manipulate
+  (not only) IPv6 addresses. Intentions were convering a given IPv6 address
+  into compressed format, convering a given IPv6 address into the same format
+  like shown in /proc/net/if_inet6 and (because it was not difficulty)
+  migrating the Perl program ip6_int into. Now only one utiltity is needed to
+  do a lot.
+  This package contains webserver log anonymization, conversion, and statistics
+  helper programs with the internal databases disabled.
+http://www.deepspace6.net/projects/ipv6calc.html
+
+@@
+
+
+Source-Makefile: feeds/oldports/isakmpd/Makefile
+Package: isakmpd
+Submenu: VPN
+Version: 20041012-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +keynote +libgmp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: IPsec management tools
+Maintainer: 
+Source: isakmpd_20041012.orig.tar.gz
+Type: ipkg
+Description: IPsec management tools
+http://isakmpd.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/isc-dhcp/Makefile
+Package: isc-dhcp-relay-ipv4
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv4
+Section: net
+Category: Network
+Title: ISC's DHCP relay (without IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  provides a means for relaying DHCP and BOOTP requests from a subnet to which
+ no DHCP server is directly connected to one or more DHCP servers on other
+ subnets.
+ This package is compiled with IPv4 and IPv6 support.
+ This package is compiled with IPv4 support only.
+https://www.isc.org/software/dhcp
+
+@@
+
+Package: isc-dhcp-server-ipv4
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv4
+Section: net
+Category: Network
+Title: ISC's DHCP server (without IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  implements the Dynamic Host Configuration Protocol (DHCP) and the Internet
+ Bootstrap Protocol (BOOTP).
+ This package is compiled with IPv4 support only.
+https://www.isc.org/software/dhcp
+
+@@
+
+Package: isc-dhcp-client-ipv4
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv4
+Section: net
+Category: Network
+Title: ISC's DHCP client (without IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  provides a means for configuring one or more network interfaces using the
+ Dynamic Host Configuration Protocol, BOOTP protocol, or if these protocols
+ fail, by statically assigning an address.
+ This package is compiled with IPv4 support only.
+https://www.isc.org/software/dhcp
+
+@@
+
+Package: isc-dhcp-omshell-ipv4
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +isc-dhcp-server-ipv4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv4
+Section: net
+Category: Network
+Title: ISC's DHCP omshell (without IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  provides an interactive way to connect to, query, and possibly change, the ISC
+ DHCP Server's state via OMAPI, the Object Management API.
+ This package is compiled with IPv4 support only.
+https://www.isc.org/software/dhcp
+
+@@
+
+Package: isc-dhcp-relay-ipv6
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv6
+Section: net
+Category: Network
+Title: ISC's DHCP relay (with IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  provides a means for relaying DHCP and BOOTP requests from a subnet to which
+ no DHCP server is directly connected to one or more DHCP servers on other
+ subnets.
+ This package is compiled with IPv4 and IPv6 support.
+https://www.isc.org/software/dhcp
+
+@@
+
+Package: isc-dhcp-server-ipv6
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv6
+Section: net
+Category: Network
+Title: ISC's DHCP server (with IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  implements the Dynamic Host Configuration Protocol (DHCP) and the Internet
+ Bootstrap Protocol (BOOTP).
+ This package is compiled with IPv4 and IPv6 support.
+https://www.isc.org/software/dhcp
+
+@@
+
+Package: isc-dhcp-client-ipv6
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv6
+Section: net
+Category: Network
+Title: ISC's DHCP client (with IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  provides a means for configuring one or more network interfaces using the
+ Dynamic Host Configuration Protocol, BOOTP protocol, or if these protocols
+ fail, by statically assigning an address.
+ This package is compiled with IPv4 and IPv6 support.
+https://www.isc.org/software/dhcp
+
+@@
+
+Package: isc-dhcp-omshell-ipv6
+Submenu: IP Addresses and Names
+Version: 4.3.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +isc-dhcp-server-ipv6
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ipv6
+Section: net
+Category: Network
+Title: ISC's DHCP omshell (with IPv6)
+Maintainer: 
+Source: dhcp-4.3.2.tar.gz
+Type: ipkg
+Description:  provides an interactive way to connect to, query, and possibly change, the ISC
+ DHCP Server's state via OMAPI, the Object Management API.
+ This package is compiled with IPv4 and IPv6 support.
+https://www.isc.org/software/dhcp
+
+@@
+
+
+Source-Makefile: feeds/oldports/keynote/Makefile
+Package: keynote
+Version: 2.3-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Simple and flexible trust-management system
+Maintainer: 
+Source: keynote-2.3.tar.bz2
+Type: ipkg
+Description:  KeyNote is a simple and flexible trust-management system designed to work
+ well for a variety of large- and small- scale Internet-based applications.
+ It provides a single, unified language for both local policies and
+ credentials.
+http://www1.cs.columbia.edu/~angelos/keynote.html
+
+@@
+
+
+Source-Makefile: feeds/oldports/knock/Makefile
+Package: knock
+Submenu: Firewall
+Version: 0.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Port-knocking (client)
+Maintainer: 
+Source: knock-0.7.tar.gz
+Type: ipkg
+Description:   	It listens to all traffic on an ethernet (or PPP) interface,
+	looking for special "knock" sequences of port-hits. A client
+	makes these port-hits by sending a TCP (or UDP) packet to a
+	port on the server. This port need not be open -- since
+	knockd listens at the link-layer level, it sees all traffic
+	even if it's destined for a closed port. When the server
+	detects a specific sequence of port-hits, it runs a command
+	defined in its configuration file. This can be used to open
+	up holes in a firewall for quick access.
+  This package contains the port-knocking client.
+http://www.zeroflux.org/projects/knock
+
+@@
+
+Package: knockd
+Submenu: Firewall
+Version: 0.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Port-knocking (server)
+Maintainer: 
+Source: knock-0.7.tar.gz
+Type: ipkg
+Description:   	It listens to all traffic on an ethernet (or PPP) interface,
+	looking for special "knock" sequences of port-hits. A client
+	makes these port-hits by sending a TCP (or UDP) packet to a
+	port on the server. This port need not be open -- since
+	knockd listens at the link-layer level, it sees all traffic
+	even if it's destined for a closed port. When the server
+	detects a specific sequence of port-hits, it runs a command
+	defined in its configuration file. This can be used to open
+	up holes in a firewall for quick access.
+  This package contains the port-knocking server.
+http://www.zeroflux.org/projects/knock
+
+@@
+
+
+Source-Makefile: feeds/oldports/leptonica/Makefile
+Package: libleptonica
+Version: 1.72-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +giflib +libpng +libtiff
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: A library for efficient image processing and image analysis operations
+Maintainer: 
+Source: leptonica-1.72.tar.gz
+Type: ipkg
+Description: A library for efficient image processing and image analysis operations
+http://www.leptonica.com/
+
+@@
+
+
+Source-Makefile: feeds/oldports/lft/Makefile
+Package: lft
+Version: 3.73-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: The alternative traceroute and whois tools for network engineers
+Maintainer: 
+Source: lft-3.73.tar.gz
+Type: ipkg
+Description: 		LFT, short for Layer Four Traceroute, is a sort of 'traceroute' that
+	often works much faster (than the commonly-used Van Jacobson method)
+	and goes through many configurations of packet-filters (firewalls).
+	More importantly, LFT implements numerous other features including AS
+	number lookups through several reliable sources, loose source routing,
+	netblock name lookups, et al.
+	This package contains the lft 'traceroute' program.
+http://pwhois.org/lft
+
+@@
+
+Package: whob
+Version: 3.73-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: The alternative traceroute and whois tools for network engineers
+Maintainer: 
+Source: lft-3.73.tar.gz
+Type: ipkg
+Description: 		LFT, short for Layer Four Traceroute, is a sort of 'traceroute' that
+	often works much faster (than the commonly-used Van Jacobson method)
+	and goes through many configurations of packet-filters (firewalls).
+	More importantly, LFT implements numerous other features including AS
+	number lookups through several reliable sources, loose source routing,
+	netblock name lookups, et al.
+	This package contains the whob 'whois' program.
+http://pwhois.org/lft
+
+@@
+
+
+Source-Makefile: feeds/oldports/libart/Makefile
+Package: libart
+Version: 2.3.21-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: An high-performance 2D graphics library
+Maintainer: 
+Source: libart_lgpl-2.3.21.tar.bz2
+Type: ipkg
+Description:  A library of functions for 2D graphics supporting a superset of the
+ PostScript imaging model, designed to be integrated with graphics,
+ artwork, and illustration programs. It is written in optimized C, and
+ is fully compatible with C++. With a small footprint of 10,000 lines of
+ code, it is especially suitable for embedded applications.
+http://www.levien.com/libart/
+
+@@
+
+
+Source-Makefile: feeds/oldports/libassuan/Makefile
+Package: libassuan
+Version: 2.2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgpg-error
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: GnuPG IPC library
+Maintainer: 
+Source: libassuan-2.2.1.tar.bz2
+Type: ipkg
+Description:  The Libassuan package contains an IPC library used by some of the other
+ GnuPG related packages. Libassuan's primary use is to allow a client to
+ interact with a non-persistent server. Libassuan is not, however,
+ limited to use with GnuPG servers and clients. It was designed to be
+ flexible enough to meet the demands of many transaction based
+ environments with non-persistent servers.
+http://www.gnupg.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/libcrypto++/Makefile
+Package: libcryptoxx
+Version: 5.6.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Crypto++ is library for creating C++ programs which use cryptographic algorithms
+Maintainer: 
+Source: libcrypto++_5.6.1.orig.tar.gz
+Type: ipkg
+Description: Crypto++ is library for creating C++ programs which use cryptographic algorithms
+http://packages.debian.org/sid/libcrypto++-dev
+
+@@
+
+
+Source-Makefile: feeds/oldports/libelf/Makefile
+Package: libelf
+Version: 0.8.13-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: ELF object file access library
+Maintainer: Entware team, entware.wl500g.info
+Source: libelf-0.8.13.tar.gz
+Type: ipkg
+Description: ELF object file access library
+http://www.mr511.de/software/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/oldports/libinklevel/Makefile
+Package: libinklevel
+Version: 0.9.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Printers Ink Level Library
+Maintainer: 
+Source: libinklevel-0.9.2.tar.gz
+Type: ipkg
+Description:   Libinklevel is a library for checking the ink level of your printer on a system which runs Linux.
+http://libinklevel.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/libnet-1.0.x/Makefile
+Package: libnet0
+Version: 1.0.2a-9
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Low-level packet creation library (v1.0.x)
+Maintainer: 
+Source: libnet-1.0.2a.tar.gz
+Type: ipkg
+Description: Low-level packet creation library (v1.0.x)
+http://www.packetfactory.net/libnet/
+
+@@
+
+
+Source-Makefile: feeds/oldports/libnids/Makefile
+Package: libnids
+Version: 1.24-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libnet0
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: A network intrusion detection library
+Maintainer: 
+Source: libnids-1.24.tar.gz
+Type: ipkg
+Description: 	An implementation of an E-component of Network Intrusion Detection
+	System.
+http://libnids.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/libotr/Makefile
+Package: libotr
+Version: 3.2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcrypt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: OTR Messaging Library
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Source: libotr-3.2.1.tar.gz
+Type: ipkg
+Description:   Off-the-Record (OTR) Messaging allows you to have private conversations over
+  instant messaging.
+http://www.cypherpunks.ca/otr/
+Peter Wagner <tripolar@gmx.at>
+@@
+
+
+Source-Makefile: feeds/oldports/lirc/Makefile
+Package: lirc
+Menu: 1
+Version: 0.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat +libftdi +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: LIRC - Linux Infrared Remote Control
+Maintainer: 
+Source: lirc-0.9.1.tar.bz2
+Type: ipkg
+Description:  LIRC is a package that allows you to decode and send infra-red signals of many
+ (but not all) commonly used remote controls.
+http://lirc.org/
+
+@@
+
+Package: lircdaemonadd
+Version: 0.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lirc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: daemon additional files
+Maintainer: 
+Source: lirc-0.9.1.tar.bz2
+Type: ipkg
+Description:  Contains additional daemon-tools.
+http://lirc.org/
+
+@@
+
+Package: lirctools
+Version: 0.9.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lirc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: LIRC tools
+Maintainer: 
+Source: lirc-0.9.1.tar.bz2
+Type: ipkg
+Description:  Contains additional lirc-tools.
+http://lirc.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/lmbench/Makefile
+Package: lmbench
+Menu: 1
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lmbench microbenchmarks
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description:   lmbench is a series of micro benchmarks intended to measure basic operating
+  system and hardware system metrics.
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-bw-file-rd
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: bw_file_rd microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: bw_file_rd microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-bw-mem
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: bw_mem microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: bw_mem microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-bw-mmap-rd
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: bw_mmap_rd microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: bw_mmap_rd microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-bw-pipe
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: bw_pipe microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: bw_pipe microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-bw-tcp
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: bw_tcp microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: bw_tcp microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-bw-unix
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: bw_unix microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: bw_unix microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-cache
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: cache microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: cache microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-disk
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: disk microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: disk microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-enough
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: enough microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: enough microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-flushdisk
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: flushdisk microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: flushdisk microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-hello
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: hello microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: hello microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-cmd
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_cmd microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_cmd microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-connect
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_connect microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_connect microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-ctx
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_ctx microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_ctx microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-dram-page
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_dram_page microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_dram_page microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-fcntl
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_fcntl microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_fcntl microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-fifo
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_fifo microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_fifo microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-fs
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_fs microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_fs microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-http
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_http microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_http microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-mem-rd
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_mem_rd microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_mem_rd microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-mmap
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_mmap microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_mmap microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-ops
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_ops microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_ops microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-pagefault
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_pagefault microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_pagefault microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-pipe
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_pipe microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_pipe microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-pmake
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_pmake microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_pmake microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-proc
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_proc microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_proc microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-rand
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_rand microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_rand microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-rpc
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_rpc microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_rpc microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-select
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_select microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_select microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-sem
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_sem microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_sem microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-sig
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_sig microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_sig microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-syscall
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_syscall microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_syscall microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-tcp
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_tcp microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_tcp microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-udp
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_udp microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_udp microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-unix
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_unix microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_unix microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-unix-connect
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_unix_connect microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_unix_connect microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lat-usleep
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lat_usleep microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lat_usleep microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-line
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: line microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: line microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lmdd
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lmdd microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lmdd microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-lmhttp
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: lmhttp microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: lmhttp microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-loop-o
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: loop_o microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: loop_o microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-memsize
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: memsize microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: memsize microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-mhz
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: mhz microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: mhz microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-msleep
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: msleep microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: msleep microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-par-mem
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: par_mem microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: par_mem microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-par-ops
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: par_ops microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: par_ops microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-stream
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: stream microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: stream microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-timing-o
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: timing_o microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: timing_o microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+Package: lmbench-tlb
+Version: 3.0-a9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lmbench
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: tlb microbenchmark
+Maintainer: 
+Source: lmbench-3.0-a9.tgz
+Type: ipkg
+Description: tlb microbenchmark
+http://sourceforge.net/projects/lmbench
+
+@@
+
+
+Source-Makefile: feeds/oldports/logrotate/Makefile
+Package: logrotate
+Version: 3.8.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: rotates, compresses, and mails system logs
+Maintainer: 
+Source: logrotate_3.8.7.orig.tar.gz
+Type: ipkg
+Description:  logrotate is designed to ease administration of systems that generate large
+ numbers of log files. It allows auto-matic rotation, compression, removal and
+ mailing of log files. Each log file may be handled daily, weekly, monthly or
+ when it grows too large.
+http://packages.debian.org/unstable/admin/logrotate
+
+@@
+
+
+Source-Makefile: feeds/oldports/loudmouth/Makefile
+Package: libloudmouth1
+Version: 1.5.0-20121201-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +glib2 +libidn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libopenssl !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: libs
+Category: Libraries
+Title: Lightweight C Jabber library
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Source: loudmouth-1.5.0-20121201.tar.bz2
+Type: ipkg
+Description:   Loudmouth is a lightweight and easy-to-use C library for programming with the
+  Jabber protocol. It's designed to be easy to get started with and yet
+  extensible to let you do anything the Jabber protocol allows.
+http://mcabber.com
+Peter Wagner <tripolar@gmx.at>
+@@
+
+
+Source-Makefile: feeds/oldports/make/Makefile
+Package: make
+Version: 4.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Title: make
+Maintainer: 
+Source: make-4.1.tar.bz2
+Type: ipkg
+Description:  The Make package contains a program for compiling packages.
+http://www.gnu.org/software/make/
+
+@@
+
+
+Source-Makefile: feeds/oldports/mcabber/Makefile
+Package: mcabber
+Submenu: Instant Messaging
+Version: 0.10.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libloudmouth1 +libcharset +libidn +libgpgme +libotr
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Jabber console client
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Source: mcabber-0.10.2.tar.bz2
+Type: ipkg
+Description:   mcabber is a small Jabber console client.
+  mcabber includes features such as SASL/SSL/TLS support, MUC (Multi-User Chat) support,
+  history logging, command completion, OpenPGP encryption, OTR (Off-the-Record
+  Messaging) support, dynamic modules and external action triggers.
+http://mcabber.com
+Peter Wagner <tripolar@gmx.at>
+@@
+
+
+Source-Makefile: feeds/oldports/memtester/Makefile
+Package: memtester
+Version: 4.1.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Userspace utility for testing the memory subsystem for faults
+Maintainer: 
+Source: memtester-4.1.3.tar.gz
+Type: ipkg
+Description:  A userspace utility for testing the memory subsystem for faults.
+http://pyropus.ca/software/memtester/
+
+@@
+
+
+Source-Makefile: feeds/oldports/mercurial/Makefile
+Package: mercurial
+Submenu: Version Control Systems
+Version: 3.3.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Mercurial Source Control Management (SCM) system
+Maintainer: 
+Source: mercurial-3.3.3.tar.gz
+Type: ipkg
+Description:   A fast, lightweight Source Control Management system designed for efficient
+  handling of very large distributed projects.
+http://mercurial.selenic.com/
+
+@@
+
+
+Source-Makefile: feeds/oldports/mini_snmpd/Makefile
+Package: mini-snmpd
+Version: 1.2b-8
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: SNMP server for embedded systems
+Maintainer: 
+Source: mini_snmpd-1.2b.tar.gz
+Type: ipkg
+Description: SNMP server for embedded systems
+http://members.aon.at/linuxfreak/linux/mini_snmpd.html
+
+@@
+
+
+Source-Makefile: feeds/oldports/mosh/Makefile
+Package: mosh-client
+Version: 1.2.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +protobuf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Mosh mobile shell (client)
+Maintainer: 
+Source: mosh-1.2.5.tar.gz
+Type: ipkg
+Description:  Mosh is a remote terminal application that allows roaming, supports
+ intermittent connectivity, and provides intelligent local echo and line
+ editing of user keystrokes.
+ This is a mosh client.
+http://mosh.mit.edu/
+
+@@
+
+Package: mosh-server
+Version: 1.2.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +protobuf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Mosh mobile shell (client)
+Maintainer: 
+Source: mosh-1.2.5.tar.gz
+Type: ipkg
+Description:  Mosh is a remote terminal application that allows roaming, supports
+ intermittent connectivity, and provides intelligent local echo and line
+ editing of user keystrokes.
+ This is a mosh server.
+http://mosh.mit.edu/
+
+@@
+
+Package: mosh-full
+Version: 1.2.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mosh-client +mosh-server +perlbase-essential +perlbase-socket +perlbase-xsloader +perlbase-getopt +perlbase-errno +perlbase-config +perlbase-io +perlbase-symbol +perlbase-selectsaver +perlbase-posix +perlbase-autoloader +perlbase-fcntl +perlbase-tie
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Mosh mobile shell (client)
+Maintainer: 
+Source: mosh-1.2.5.tar.gz
+Type: ipkg
+Description:  Mosh is a remote terminal application that allows roaming, supports
+ intermittent connectivity, and provides intelligent local echo and line
+ editing of user keystrokes.
+ This is a full package with perl wrapper script
+http://mosh.mit.edu/
+
+@@
+
+
+Source-Makefile: feeds/oldports/mutt/Makefile
+Package: mutt
+Version: 1.5.23-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libncursesw +libidn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: mail
+Category: Mail
+Title: Console mail client
+Maintainer: 
+Source: mutt-1.5.23.tar.gz
+Type: ipkg
+Description: 	Mutt is a small but very powerful text-based mail client for Unix
+	operating systems.
+http://www.mutt.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/n2n/Makefile
+Package: n2n
+Submenu: VPN
+Version: 2.1.0-20130823-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: VPN tunneling daemon
+Maintainer: 
+Source: n2n-2.1.0-20130823.tar.bz2
+Type: ipkg
+Description: VPN tunneling daemon
+
+@@
+
+
+Source-Makefile: feeds/oldports/nagios/Makefile
+Package: nagios
+Version: 3.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +perl +libltdl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Title: service and network monitoring program
+Maintainer: 
+Source: nagios-3.5.1.tar.gz
+Type: ipkg
+Description: 	service and network monitoring program
+http://www.nagios.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/nagios-plugins/Makefile
+Package: nagios-plugins
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +bash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Title: plugins for Nagios checks
+Maintainer: 
+Source: nagios-plugins-2.0.3.tar.gz
+Type: ipkg
+Description: plugins for Nagios checks
+http://nagiosplug.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/ncftp/Makefile
+Package: ncftp
+Submenu: File Transfer
+Version: 3.2.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: NcFTP Client (main program)
+Maintainer: 
+Source: ncftp-3.2.5-src.tar.bz2
+Type: ipkg
+Description:  NcFTP Client (also known as just NcFTP) is a set of FREE application
+ programs implementing the File Transfer Protocol (FTP).
+ Main program.
+http://www.ncftpd.com/
+
+@@
+
+Package: ncftp-utils
+Submenu: File Transfer
+Version: 3.2.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: NcFTP Client (utilities)
+Maintainer: 
+Source: ncftp-3.2.5-src.tar.bz2
+Type: ipkg
+Description:  NcFTP Client (also known as just NcFTP) is a set of FREE application
+ programs implementing the File Transfer Protocol (FTP).
+ Utilities.
+http://www.ncftpd.com/
+
+@@
+
+
+Source-Makefile: feeds/oldports/net-tools/Makefile
+Package: net-tools-arp
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - arp
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program arp from net-tools. Manipulate kernel's ARP cache.
+  Add, delete an entry, or to dump the entire cache.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-hostname
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - hostname
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program hostname from net-tools.
+  Reports or sets the name of the current host system.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-dnsdomainname
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread net-tools-hostname
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - dnsdomainname
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program dnsdomainname from net-tools.
+  Reports the system's DNS domain name.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-domainname
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread net-tools-hostname
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - domainname
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program domainname from net-tools.
+  Reports the system's NIS/YP domain name.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-ifconfig
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - ifconfig
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program ifconfig from net-tools.
+  Configure network interfaces.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-ipmaddr
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - ipmaddr
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program ipmaddr from net-tools.  Adds,
+  deletes and shows an interface's multicast addresses.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-iptunnel
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - iptunnel
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program iptunnel from net-tools.
+  Adds, changes, deletes and shows an interface's tunnels.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-mii-tool
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - mii-tool
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program mii-tool from net-tools.  Checks or sets
+  the status of a network interface's Media Independent
+  Interface (MII) unit.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-nameif
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - nameif
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program nameif from net-tools
+  Trivial File Transfer Protocol server.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-netstat
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - netstat
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program netstat from net-tools. Report network
+  connections, routing tables, and interface statistics.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-nisdomainname
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread net-tools-hostname
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - nisdomainname
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program nisdomainname from net-tools.
+  Same as domainname.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-plipconfig
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - plipconfig
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program plipconfig from net-tools.  Fine tune the
+  PLIP device parameters, to improve its performance.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-rarp
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - rarp
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program rarp from net-tools.
+  Manipulate the kernel's RARP table.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-route
+Submenu: Routing and Redirection
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - route
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program route from net-tools.
+  Manipulate the IP routing table.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-slattach
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - slattach
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program slattach from net-tools.  Attaches a
+  network interface to a serial line. This allows
+  to use normal terminal lines for point-to-point
+  links to other computers.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+Package: net-tools-ypdomainname
+Version: 1.60-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread net-tools-hostname
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: net-tools - ypdomainname
+Maintainer: 
+Source: net-tools-1.60.tar.bz2
+Type: ipkg
+Description:   Program route from net-tools.
+  Same as domainname.
+http://www.tazenda.demon.co.uk/phil/net-tools
+
+@@
+
+
+Source-Makefile: feeds/oldports/nzbget/Makefile
+Package: nzbget
+Submenu: NNTP
+Version: 15.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libopenssl +libncurses +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Binary newsgrabber for nzb-files
+Maintainer: Artur Wronowski <arteqw@gmail.com>
+Source: nzbget-15.0-src.tar.gz
+Type: ipkg
+Description: A command-line client/server based binary newsgrabber for nzb-files.
+http://nzbget.sourceforge.net/
+Artur Wronowski <arteqw@gmail.com>
+@@
+
+
+Source-Makefile: feeds/oldports/oidentd/Makefile
+Package: oidentd
+Version: 2.0.8-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Identd server
+Maintainer: 
+Source: oidentd-2.0.8.tar.gz
+Type: ipkg
+Description: 	A nat aware identd server that will correctly forwared requests to clients.
+http://dev.ojnk.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/opendchub/Makefile
+Package: opendchub
+Submenu: P2P
+Version: 0.8.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: software for the Direct Connect network
+Maintainer: 
+Source: opendchub-0.8.3.tar.gz
+Type: ipkg
+Description: 	Open DC hub is a Unix/Linux version of the hub software
+	for the Direct Connect network
+http://opendchub.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/openswan/Makefile
+Package: openswan
+Submenu: VPN
+Version: 2.6.43-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgmp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Openswan (daemon)
+Maintainer: 
+Source: openswan-2.6.43.tar.gz
+Type: ipkg
+Description:  Openswan is an IPsec implementation for Linux.
+ This package contains the Openswan user-land daemon.
+http://www.openswan.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/ossp-js/Makefile
+Package: js
+Submenu: JavaScript
+Version: 1.6.20070208-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjs +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Mozilla JavaScript Engine (interpreter)
+Maintainer: 
+Source: js-1.6.20070208.tar.gz
+Type: ipkg
+Description: Mozilla JavaScript Engine (interpreter)
+http://www.ossp.org/pkg/lib/js/
+
+@@
+
+Package: libjs
+Version: 1.6.20070208-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Mozilla JavaScript Engine (library)
+Maintainer: 
+Source: js-1.6.20070208.tar.gz
+Type: ipkg
+Description: Mozilla JavaScript Engine (library)
+http://www.ossp.org/pkg/lib/js/
+
+@@
+
+
+Source-Makefile: feeds/oldports/palantir/Makefile
+Package: palantir
+Version: 2.8pre3-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: A multichannel interactive streaming solution
+Maintainer: Entware team, entware.wl500g.info
+Source: palantir-server-20130906.tgz
+Type: ipkg
+Description: 	Palantir is a Linux-based streaming system designed to transmit live
+	video, audio and data over a TCP/IP network, as well as to control
+	remote devices.
+http://www.fastpath.it/products/palantir/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/oldports/proftpd/Makefile
+Package: proftpd
+Submenu: File Transfer
+Version: 1.3.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ProFTPD FTP server
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: proftpd-1.3.5.tar.gz
+Type: ipkg
+Description: ProFTPD FTP server
+http://www.proftpd.org/
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+
+Source-Makefile: feeds/oldports/psmisc/Makefile
+Package: psmisc
+Version: 22.21-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: proc utilities
+Maintainer: 
+Source: psmisc-22.21.tar.gz
+Type: ipkg
+Description:  psmisc is a set of additional small useful utilities that use
+ the proc filesystem: fuser, killall, pstree, and prtstat
+http://psmisc.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/pyload/Makefile
+Package: pyload
+Version: 0.4.9-20150804-1a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-curl +python-sqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A fast, lightweight and full featured download manager
+Maintainer: 
+Source: pyload-0.4.9-20150804.tar.bz2
+Type: ipkg
+Description: A fast, lightweight and full featured download manager
+http://pyload.org
+
+@@
+
+
+Source-Makefile: feeds/oldports/pyopenssl/Makefile
+Package: pyopenssl
+Submenu: Python
+Version: 0.13.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: lang
+Category: Languages
+Title: pyopenssl
+Maintainer: 
+Source: pyOpenSSL-0.13.1.tar.gz
+Type: ipkg
+Description:   Python interface to the OpenSSL library.
+http://pyopenssl.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/python-crypto/Makefile
+Package: python-crypto
+Submenu: Python
+Version: 2.6.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang-python
+Category: Languages
+Title: python-crypto
+Maintainer: 
+Source: pycrypto-2.6.1.tar.gz
+Type: ipkg
+Description: A collection of both secure hash functions (such as MD5 and SHA),
+and various encryption algorithms (AES, DES, IDEA, RSA, ElGamal, etc.).
+http://www.pycrypto.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/python-curl/Makefile
+Package: python-curl
+Submenu: Python
+Version: 7.19.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +libcurl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: language-python
+Category: Languages
+Title: python-curl
+Maintainer: 
+Source: pycurl-7.19.5.1.tar.gz
+Type: ipkg
+Description: Python module interface to the cURL library.
+http://sourceforge.net/projects/pycurl
+
+@@
+
+
+Source-Makefile: feeds/oldports/quicktun/Makefile
+Package: quicktun
+Submenu: VPN
+Version: 2.2.4-burke-20140417-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: QuickTun is a simple and secure VPN software
+Maintainer: 
+Source: quicktun-2.2.4-burke-20140417.tar.bz2
+Type: ipkg
+Description:  QuickTun is a simple and secure VPN software
+http://wiki.ucis.nl/QuickTun
+
+@@
+
+
+Source-Makefile: feeds/oldports/radiusclient-ng/Makefile
+Package: libradiusclient-ng
+Version: 0.5.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: RADIUS client library
+Maintainer: 
+Source: radiusclient-ng-0.5.6.tar.gz
+Type: ipkg
+Description:  Purpose of this project is to build a portable, easy-to-use and
+ standard compliant library suitable for developing free and commercial
+ software that need support for RADIUS protocol (RFCs 2128 and 2139).
+ This package contains shared libraries, needed by other programs.
+http://developer.berlios.de/projects/radiusclient-ng/
+
+@@
+
+Package: radiusclient-ng
+Version: 0.5.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libradiusclient-ng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: RADIUS client
+Maintainer: 
+Source: radiusclient-ng-0.5.6.tar.gz
+Type: ipkg
+Description:  Purpose of this project is to build a portable, easy-to-use and
+ standard compliant library suitable for developing free and commercial
+ software that need support for RADIUS protocol (RFCs 2128 and 2139).
+ This package contains a RADIUS client.
+http://developer.berlios.de/projects/radiusclient-ng/
+
+@@
+
+
+Source-Makefile: feeds/oldports/radlib/Makefile
+Package: radlib
+Version: 2.12.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Rapid Application Development Library
+Maintainer: 
+Source: radlib-2.12.0.tar.gz
+Type: ipkg
+Description: 	radlib is a rapid application development library for unix multi-process applications
+http://www.radlib.teel.ws/
+
+@@
+
+
+Source-Makefile: feeds/oldports/remind/Makefile
+Package: remind
+Version: 03.01.15-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Reminder
+Maintainer: 
+Source: remind-03.01.15.tar.gz
+Type: ipkg
+Description:  Remind is a powerfull commadline reminder.
+http://www.roaringpenguin.com/files/download/
+
+@@
+
+
+Source-Makefile: feeds/oldports/rrdtool/Makefile
+Package: librrd
+Version: 1.2.30-3a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libart +libfreetype +libpng +zlib +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: libs
+Category: Libraries
+Title: Round Robin Database (RRD) management library (v1.2.x)
+Maintainer: 
+Source: rrdtool-1.2.30.tar.gz
+Type: ipkg
+Description: Round Robin Database (RRD) management library (v1.2.x)
+http://oss.oetiker.ch/rrdtool/
+
+@@
+
+Package: rrdcgi
+Version: 1.2.30-3a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librrd +cgilib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: utils
+Category: Utilities
+Title: Round Robin Database (RRD) CGI graphing tool (v1.2.x)
+Maintainer: 
+Source: rrdtool-1.2.30.tar.gz
+Type: ipkg
+Description: Round Robin Database (RRD) CGI graphing tool (v1.2.x)
+http://oss.oetiker.ch/rrdtool/
+
+@@
+
+Package: rrdtool
+Version: 1.2.30-3a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librrd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: utils
+Category: Utilities
+Title: Round Robin Database (RRD) management tools (v1.2.x)
+Maintainer: 
+Source: rrdtool-1.2.30.tar.gz
+Type: ipkg
+Description: Round Robin Database (RRD) management tools (v1.2.x)
+http://oss.oetiker.ch/rrdtool/
+
+@@
+
+
+Source-Makefile: feeds/oldports/rsnapshot/Makefile
+Package: rsnapshot
+Submenu: backup
+Version: 1.4.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync +perl +perlbase-autoloader +perlbase-class +perlbase-cwd +perlbase-dirhandle +perlbase-essential +perlbase-fcntl +perlbase-file +perlbase-getopt +perlbase-io +perlbase-posix +perlbase-selectsaver +perlbase-symbol +perlbase-tie +perlbase-xsloader +coreutils-cp +coreutils-du +coreutils-rm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: rsnapshot Backup
+Maintainer: 
+Source: rsnapshot-1.4.0.tar.gz
+Type: ipkg
+Description:   rsnapshot is a filesystem snapshot utility for making backups of local and
+  remote systems.
+
+  Using rsync and hard links, it is possible to keep multiple, full backups
+  instantly available. The disk space required is just a little more than the
+  space of one full backup, plus incrementals.
+http://www.rsnapshot.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/sane-backends/Makefile
+Package: sane-backends
+Version: 1.0.24-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sane-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Scanner Access Now Easy (backends)
+Maintainer: 
+Source: sane-backends-1.0.24.tar.gz
+Type: ipkg
+Description:  SANE (Scanner Access Now Easy) is a universal scanner interface.
+ This package contains the SANE daemon.
+http://www.sane-project.org/
+
+@@
+
+Package: sane-libs
+Version: 1.0.24-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libtiff +libusb-compat +cups +libv4l
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Scanner Access Now Easy (libraries)
+Maintainer: 
+Source: sane-backends-1.0.24.tar.gz
+Type: ipkg
+Description:  SANE (Scanner Access Now Easy) is a universal scanner interface.
+ This package contains the SANE shared libraries.
+http://www.sane-project.org/
+
+@@
+
+Package: sane-frontends
+Version: 1.0.24-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sane-backends
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Scanner Access Now Easy (frontends)
+Maintainer: 
+Source: sane-backends-1.0.24.tar.gz
+Type: ipkg
+Description:  SANE (Scanner Access Now Easy) is a universal scanner interface.
+ This package contains the SANE frontends.
+http://www.sane-project.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/sdparm/Makefile
+Package: sdparm
+Submenu: disc
+Version: 1.09-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Read or modify SCSI or USB disk parameters
+Maintainer: 
+Source: sdparm-1.09.tar.bz2
+Type: ipkg
+Description:  The sdparm utility outputs and in some cases modifies SCSI device parameters.
+http://sg.danny.cz/sg/sdparm.html
+
+@@
+
+
+Source-Makefile: feeds/oldports/sed/Makefile
+Package: sed
+Version: 4.2.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: GNU streams editor
+Maintainer: 
+Source: sed-4.2.2.tar.bz2
+Type: ipkg
+Description:  Sed (streams editor) takes text input and performs some operation
+ (or set of operations) on it and outputs the modified text.
+http://ftp.gnu.org/gnu/sed/
+
+@@
+
+
+Source-Makefile: feeds/oldports/slang2/Makefile
+Package: libslang2
+Version: 2.3.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +terminfo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: S-Lang v2.3
+Maintainer: 
+Source: slang-2.3.0.tar.bz2
+Type: ipkg
+Description:   This is a shell which is mostly just a wrapper around the S-Lang Interpreter,
+  which is part of the S-Lang Library.
+http://www.jedsoft.org/slang
+
+@@
+
+Package: slsh
+Version: 2.3.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libslang2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: S-Lang Shell
+Maintainer: 
+Source: slang-2.3.0.tar.bz2
+Type: ipkg
+Description: S-Lang Shell
+http://www.jedsoft.org/slang/slsh.html
+
+@@
+
+
+Source-Makefile: feeds/oldports/srelay/Makefile
+Package: srelay
+Submenu: Web Servers/Proxies
+Version: 0.4.8b6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A socks 4/5 proxy server
+Maintainer: 
+Source: srelay-0.4.8b6.tar.gz
+Type: ipkg
+Description: A socks 4/5 proxy server
+http://www.c-wind.com/srelay/
+
+@@
+
+
+Source-Makefile: feeds/oldports/streamripper/Makefile
+Package: streamripper
+Version: 1.64.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmad +libfaad2 +libvorbis +glib2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: streamripper
+Maintainer: 
+Source: streamripper-1.64.6.tar.gz
+Type: ipkg
+Description: 	Streamripper is an Open Source application that lets you record streaming mp3 to your hard drive.
+http://streamripper.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/subversion/Makefile
+Package: subversion-libs
+Submenu: Version Control Systems
+Version: 1.8.13-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libaprutil +libmagic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: subversion libs
+Maintainer: 
+Source: subversion-1.8.13.tar.bz2
+Type: ipkg
+Description:   	Subversion is a free/open-source version control system. That is,
+	Subversion manages files and directories, and the changes made to them,
+	over time. This allows you to recover older versions of your data, or
+	examine the history of how your data changed. In this regard, many
+	people think of a version control system as a sort of time machine.
+  This package contains the subversion libraries.
+http://subversion.apache.org/
+
+@@
+
+Package: subversion-client
+Submenu: Version Control Systems
+Version: 1.8.13-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libaprutil +libmagic subversion-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: subversion client tools
+Maintainer: 
+Source: subversion-1.8.13.tar.bz2
+Type: ipkg
+Description:   	Subversion is a free/open-source version control system. That is,
+	Subversion manages files and directories, and the changes made to them,
+	over time. This allows you to recover older versions of your data, or
+	examine the history of how your data changed. In this regard, many
+	people think of a version control system as a sort of time machine.
+  This package contains the subversion client tools.
+http://subversion.apache.org/
+
+@@
+
+Package: subversion-server
+Submenu: Version Control Systems
+Version: 1.8.13-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libaprutil +libmagic subversion-libs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: subversion server
+Maintainer: 
+Source: subversion-1.8.13.tar.bz2
+Type: ipkg
+Description:   	Subversion is a free/open-source version control system. That is,
+	Subversion manages files and directories, and the changes made to them,
+	over time. This allows you to recover older versions of your data, or
+	examine the history of how your data changed. In this regard, many
+	people think of a version control system as a sort of time machine.
+  This package contains the subversion server.
+http://subversion.apache.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/syslog-ng/Makefile
+Package: syslog-ng
+Version: 2.1.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +eventlog +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: admin
+Category: Administration
+Title: A powerful syslog daemon
+Maintainer: 
+Source: syslog-ng_2.1.4.tar.gz
+Type: ipkg
+Description: 	syslog-ng reads and logs messages to the system console, log
+	files, other machines and/or users as specified by its
+	configuration file.
+http://www.balabit.com/products/syslog_ng/
+
+@@
+
+
+Source-Makefile: feeds/oldports/tcl/Makefile
+Package: tcl
+Version: 8.5.18-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: TCL Lang
+Maintainer: 
+Source: tcl8.5.18-src.tar.gz
+Type: ipkg
+Description: Tcl (Tool Command Language) is a very powerful but easy to learn dynamic
+programming language, suitable for a very wide range of uses, including web and
+desktop applications, networking, administration, testing and many more. Open
+source and business-friendly, Tcl is a mature yet evolving language that is truly
+cross platform, easily deployed and highly extensible.
+http://www.tcl.tk
+
+@@
+
+
+Source-Makefile: feeds/oldports/tesseract/Makefile
+Package: tesseract
+Version: 3.04.00-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libleptonica +libpthread +librt +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Tesseract Open Source OCR Engine
+Maintainer: 
+Source: tesseract-ocr-3.04.00.tar.bz2
+Type: ipkg
+Description: Tesseract Open Source OCR Engine
+https://github.com/tesseract-ocr
+
+@@
+
+
+Source-Makefile: feeds/oldports/tftp-hpa/Makefile
+Package: tftp-hpa
+Submenu: File Transfer
+Version: 5.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: An enhanced version of the BSD TFTP client
+Maintainer: 
+Source: tftp-hpa-5.2.tar.gz
+Type: ipkg
+Description: An enhanced version of the BSD TFTP client
+http://www.kernel.org/pub/software/network/tftp
+
+@@
+
+Package: tftpd-hpa
+Submenu: File Transfer
+Version: 5.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: An enhanced version of the BSD TFTP server
+Maintainer: 
+Source: tftp-hpa-5.2.tar.gz
+Type: ipkg
+Description: An enhanced version of the BSD TFTP server
+http://www.kernel.org/pub/software/network/tftp
+
+@@
+
+
+Source-Makefile: feeds/oldports/time/Makefile
+Package: time
+Version: 1.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: The GNU time utility
+Maintainer: 
+Source: time-1.7.tar.gz
+Type: ipkg
+Description:   `time' is a program that measures many of the CPU resources, such as time and
+  memory, that other programs use.  The GNU version can format the output in
+  arbitrary ways by using a printf-style format string to include various
+  resource measurements.  Some systems do not provide much information about
+  program resource use; `time' reports unavailable information as zero values.
+http://www.gnu.org/software/time/
+
+@@
+
+
+Source-Makefile: feeds/oldports/unfs3/Makefile
+Package: unfs3
+Submenu: Filesystem
+Version: 0.9.22-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +portmap +libacl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: User-space NFSv3 Server
+Maintainer: 
+Source: unfs3-0.9.22.tar.gz
+License: UNFS3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	UNFS3 is a user-space implementation of the NFSv3 server
+	specification. It provides a daemon for the MOUNT and NFS
+	protocols, which are used by NFS clients for accessing files
+	on the server.
+http://unfs3.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/vtun/Makefile
+Package: vtun
+Menu: 1
+Submenu: VPN
+Version: 3.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +VTUN_LZO:liblzo +VTUN_LZO:zlib +VTUN_SSL:libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: VPN tunneling daemon
+Maintainer: 
+Source: vtun-3.0.3.tar.gz
+Type: ipkg
+Description: VPN tunneling daemon
+http://vtun.sourceforge.net
+
+@@
+Config:
+menu "Configuration"
+        depends on PACKAGE_vtun
+
+config VTUN_config
+	bool
+
+	depends on PACKAGE_vtun
+	config VTUN_LZO
+		bool "enable vtun compression"
+		help
+			vtun tunnels will be compressed
+		default y
+
+	config VTUN_SSL
+		bool "enable vtun ssl encryption"
+		help
+			vtun tunnels will be encrypted
+		default y
+endmenu
+@@
+
+
+Source-Makefile: feeds/oldports/weechat/Makefile
+Package: weechat
+Submenu: Instant Messaging
+Version: 1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libgnutls +libgcrypt +zlib +libncursesw +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +PACKAGE_libaspell:libaspell +perl +libpthread +python-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Lightweight IRC client
+Maintainer: 
+Source: weechat-1.2.tar.bz2
+Type: ipkg
+Description:  Weechat is fast, light & extensible IRC client.
+http://www.weechat.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/wput/Makefile
+Package: wput
+Submenu: File Transfer
+Version: 0.6.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A tiny wget-like ftp-client for uploading files
+Maintainer: 
+Source: wput-0.6.2.tgz
+Type: ipkg
+Description:  Wput is a tiny ftp-client, that uploads files or directories
+ to a remote ftp-server.  Main features are: resuming,
+ time-stamping, wget-like interface, proxy-support and
+ speed-limit.
+http://wput.sourceforge.net/
+
+@@
+
+
+Source-Makefile: feeds/oldports/wview/Makefile
+Package: wview
+Version: 5.21.5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +zlib +libpng +libgd +libreadline +libsqlite3 +libusb-1.0 +radlib +sqlite3-cli +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Wview Weather Station Software
+Maintainer: 
+Source: wview-5.21.5.tar.gz
+Type: ipkg
+Description:   Wview is a collection of linux/unix daemons which interface with a supported
+  weather station to retrieve archive records (if generated by the station) and
+  current conditions. If the station does not generate archive records
+  internally, wview will auto-generate archive records based on the sensor
+  readings collected for that interval. The archive records and High/Low (HILOW)
+  data are stored in SQLite3 databases. At a configurable interval, wview will
+  utilize the archive history and current conditions to generate weather images
+  (buckets, dials and graphs) and HTML web pages based on user-configurable HTML
+  templates.
+
+  After install you need to create a directory holding archive and create the
+  database there by running there
+    sqlite3 wview-archive.sdb '.read /opt/etc/wview/wview-archive.sql'
+
+  Then copy all your theme files to the appropriate place (on a non-volatile
+  storage), and html-templates.conf to /opt/etc/wview/; then wviewconfig to configure
+  the system.
+
+  Read and amend /opt/etc/init.d/wview appropriately for your particular setup!
+http://www.wviewweather.com/
+
+@@
+
+
+Source-Makefile: feeds/oldports/wxbase/Makefile
+Package: libwxbase
+Version: 2.8.12-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libstdcpp +zlib +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Cross-platform C++ framework
+Maintainer: 
+Source: wxGTK-2.8.12.tar.bz2
+Type: ipkg
+Description:  wxBase contains most of the non-GUI classes from the wxWindows cross-
+ -platform C++ framework. There are 2 categories: generally useful portable
+ code (date/time handling, command line parsing, regular expression support)
+ and wrappers for the OS objects (files, directories, sockets, threads,
+ etc.) allowing you to write portable programs easily.
+http://www.wxwidgets.org/
+
+@@
+
+
+Source-Makefile: feeds/oldports/xmail/Makefile
+Package: xmail
+Version: 1.27-1b
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: mail
+Category: Mail
+Title: advanced, fast and reliable ESMTP/POP3 mail server
+Maintainer: 
+Source: xmail-1.27.tar.gz
+Type: ipkg
+Description:  XMail is an Internet mail server featuring an SMTP, POP3 and finger server.
+ It's incredibly easy to set up and has lots of features including :
+ multiple domains, virtual users and spam protection.
+http://www.xmailserver.org/
+
+@@
+
+

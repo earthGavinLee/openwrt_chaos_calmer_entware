@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/adsuck/Makefile
+Package: adsuck
+Submenu: IP Addresses and Names
+Version: 2.5.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libldns +libevent2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: adsuck is a small DNS server that spoofs blacklisted addresses
+Maintainer: Entware team, entware.wl500g.info
+Source: adsuck-2.5.0.tgz
+Type: ipkg
+Description:  adsuck is a small DNS server that spoofs blacklisted addresses and forwards
+ all other queries. The idea is to be able to prevent connections
+ to undesirable sites such as ad servers, crawlers and other nasties.
+https://opensource.conformal.com/wiki/adsuck
+Entware team, entware.wl500g.info
+@@
+
+

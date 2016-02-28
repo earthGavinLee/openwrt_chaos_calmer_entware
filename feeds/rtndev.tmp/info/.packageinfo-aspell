@@ -1,0 +1,38 @@
+Source-Makefile: feeds/rtndev/aspell/Makefile
+Package: aspell
+Version: 0.60.6.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libaspell
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: spell checker
+Maintainer: Entware team, entware.wl500g.info
+Source: aspell-0.60.6.1.tar.gz
+Type: ipkg
+Description:  GNU Aspell does a superior job of suggesting possible replacements for
+ a misspelled word than just about any other spell checker out there for
+ the English (and some other) language.
+http://aspell.net/
+Entware team, entware.wl500g.info
+@@
+
+Package: libaspell
+Version: 0.60.6.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: spell checker library
+Maintainer: Entware team, entware.wl500g.info
+Source: aspell-0.60.6.1.tar.gz
+Type: ipkg
+Description:  GNU Aspell library
+http://aspell.net/
+Entware team, entware.wl500g.info
+@@
+
+

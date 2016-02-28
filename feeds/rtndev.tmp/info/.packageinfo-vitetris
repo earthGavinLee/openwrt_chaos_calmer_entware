@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/vitetris/Makefile
+Package: vitetris
+Version: 0.57-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: Terminal-based Tetris clone
+Maintainer: Entware team, entware.wl500g.info
+Source: vitetris-0.57.tar.gz
+Type: ipkg
+Description:  Vitetris is a terminal-based Tetris clone by Victor Nilsson. Gameplay is
+ much like the early Tetris games by Nintendo. Features include:
+ configurable keys, highscore table, two-player mode with garbage,
+ network play.
+http://www.victornils.net/tetris
+Entware team, entware.wl500g.info
+@@
+
+

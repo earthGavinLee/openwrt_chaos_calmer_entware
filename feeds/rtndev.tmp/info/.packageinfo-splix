@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/splix/Makefile
+Package: splix
+Submenu: Printing
+Version: 2.0.0-r315-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcupsimage +libjbig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Samsung CUPS drivers
+Maintainer: Entware team, entware.wl500g.info
+Source: splix-2.0.0-r315.tar.bz2
+Type: ipkg
+Description:  SpliX is a set of CUPS printer drivers for SPL (Samsung Printer Language)
+ printers.
+http://splix.ap2c.org/
+Entware team, entware.wl500g.info
+@@
+
+

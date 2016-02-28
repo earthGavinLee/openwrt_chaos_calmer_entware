@@ -1,0 +1,36 @@
+Source-Makefile: feeds/oldports/findutils/Makefile
+Package: findutils
+Version: 4.5.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: File finding utilities
+Maintainer: Entware team, entware.wl500g.info
+Source: findutils_4.5.14.orig.tar.gz
+Type: ipkg
+Description:  GNU Find Utilities are the basic directory searching utilities of the GNU OS.
+http://ftp.debian.org/debian/pool/main/f/findutils
+Entware team, entware.wl500g.info
+@@
+
+Package: findutils-locate
+Version: 4.5.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +findutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: File finding utilities (locate and relative utils)
+Maintainer: Entware team, entware.wl500g.info
+Source: findutils_4.5.14.orig.tar.gz
+Type: ipkg
+Description:  locate, updatedb is a part of GNU Find Utilities.
+http://ftp.debian.org/debian/pool/main/f/findutils
+Entware team, entware.wl500g.info
+@@
+
+

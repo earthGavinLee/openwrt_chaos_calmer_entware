@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/idle3-tools/Makefile
+Package: idle3-tools
+Submenu: disc
+Version: 0.9.3-r21-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: WD idle3 timer settings
+Maintainer: Entware team, entware.wl500g.info
+Source: idle3-tools-0.9.3-r21.tar.gz
+Type: ipkg
+Description:  This linux/unix utility can be used to remove or set the infamous idle3 timer
+ found on recent Western Digital Hard Disk Drives.
+http://idle3-tools.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+

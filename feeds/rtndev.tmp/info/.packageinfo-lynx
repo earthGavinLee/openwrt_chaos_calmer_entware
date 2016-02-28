@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/lynx/Makefile
+Package: lynx
+Version: 2.8.8rel.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +zlib +libbz2 +libidn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a text web browser
+Maintainer: Entware team, entware.wl500g.info
+Source: lynx2.8.8rel.2.tar.bz2
+Type: ipkg
+Description:  Lynx is the text web browser
+http://lynx.isc.org/
+Entware team, entware.wl500g.info
+@@
+
+

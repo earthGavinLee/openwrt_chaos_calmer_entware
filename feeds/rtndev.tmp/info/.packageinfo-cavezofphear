@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/cavezofphear/Makefile
+Package: cavezofphear
+Version: 0.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: CAVEZ of PHEAR is a boulder dash / digger like game
+Maintainer: Entware team, entware.wl500g.info
+Source: phear-0.5.1.tar.bz2
+Type: ipkg
+Description:  CAVEZ of PHEAR is a boulder dash / digger like game for console / terminals
+ using ncurses. The goal of this game is to escape through the caves by
+ collecting diamonds and avoid falling stones.
+http://www.x86.no/cavezofphear
+Entware team, entware.wl500g.info
+@@
+
+

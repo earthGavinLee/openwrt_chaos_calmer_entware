@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/cpio/Makefile
+Package: cpio
+Version: 2.11-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: manage archives of files
+Maintainer: Entware team, entware.wl500g.info
+Source: cpio-2.11.tar.gz
+Type: ipkg
+Description:  GNU cpio does a superior job of suggesting possible replacements for
+ a misspelled word than just about any other spell checker out there for
+ the English (and some other) language.
+@GNU/cpio
+Entware team, entware.wl500g.info
+@@
+
+

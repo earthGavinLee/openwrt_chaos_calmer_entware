@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/daemonize/Makefile
+Package: daemonize
+Version: 1.7.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: runs a command as a daemon
+Maintainer: Entware team, entware.wl500g.info
+Source: daemonize-1.7.6.tar.bz2
+Type: ipkg
+Description:  daemonize is a command-line utility that runs a command as a Unix daemon.
+http://software.clapper.org/daemonize/
+Entware team, entware.wl500g.info
+@@
+
+

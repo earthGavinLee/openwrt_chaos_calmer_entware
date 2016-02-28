@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/angband/Makefile
+Package: angband
+Version: 4.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: single-player, text-based, dungeon simulation game
+Maintainer: Entware team, entware.wl500g.info
+Source: angband-4.0.1.tar.gz
+Type: ipkg
+Description:  Angband is a single-player, text-based, dungeon simulation derived from
+ the game Moria, which was in turn based on Rogue. It is often described
+ as a \"roguelike\" game because the look and feel of the game is still
+ quite similar to Rogue.
+http://rephial.org
+Entware team, entware.wl500g.info
+@@
+
+

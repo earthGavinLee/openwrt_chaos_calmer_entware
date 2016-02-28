@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/ubuntu-fonts/Makefile
+Package: ubuntu-fonts
+Submenu: Printing
+Version: 0.80-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ubuntu-fonts
+Maintainer: Entware team, entware.wl500g.info
+Source: ubuntu-font-family-0.80.zip
+Type: ipkg
+Description:  The Ubuntu typeface has been specially created to complement the Ubuntu tone of
+ voice. It has a contemporary style and contains characteristics unique to the
+ Ubuntu brand that convey a precise, reliable and free attitude.
+http://font.ubuntu.com/download
+Entware team, entware.wl500g.info
+@@
+
+

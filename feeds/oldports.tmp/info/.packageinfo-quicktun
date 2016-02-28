@@ -1,0 +1,20 @@
+Source-Makefile: feeds/oldports/quicktun/Makefile
+Package: quicktun
+Submenu: VPN
+Version: 2.2.4-burke-20140417-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: QuickTun is a simple and secure VPN software
+Maintainer: 
+Source: quicktun-2.2.4-burke-20140417.tar.bz2
+Type: ipkg
+Description:  QuickTun is a simple and secure VPN software
+http://wiki.ucis.nl/QuickTun
+
+@@
+
+

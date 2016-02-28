@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/asterisk18-chan-dongle/Makefile
+Package: asterisk18-chan-dongle
+Submenu: Telephony
+Version: 1.1-20150411-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +asterisk18 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Huawei UMTS 3G dongle support
+Maintainer: Entware team, entware.wl500g.info
+Source: asterisk18-chan-dongle-1.1-20150411.tar.bz2
+Type: ipkg
+Description:  Asterisk channel driver for Huawei UMTS cards.
+ This channel driver is in alpha stage.
+https://github.com/bg111/asterisk-chan-dongle
+Entware team, entware.wl500g.info
+@@
+
+

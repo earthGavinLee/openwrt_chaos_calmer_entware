@@ -1,0 +1,54 @@
+Source-Makefile: feeds/oldports/iproute2-legacy/Makefile
+Package: ip-legacy
+Submenu: Routing and Redirection
+Version: 2.6.39-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Routing control utility
+Maintainer: Entware team, entware.wl500g.info
+Source: iproute2-2.6.39.tar.gz
+Type: ipkg
+Description: Routing control utility
+http://linux-net.osdl.org/index.php/Iproute2
+Entware team, entware.wl500g.info
+@@
+
+Package: tc-legacy
+Version: 2.6.39-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Traffic control utility
+Maintainer: Entware team, entware.wl500g.info
+Source: iproute2-2.6.39.tar.gz
+Type: ipkg
+Description: Traffic control utility
+http://linux-net.osdl.org/index.php/Iproute2
+Entware team, entware.wl500g.info
+@@
+
+Package: genl-legacy
+Version: 2.6.39-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: General netlink utility frontend
+Maintainer: Entware team, entware.wl500g.info
+Source: iproute2-2.6.39.tar.gz
+Type: ipkg
+Description: General netlink utility frontend
+http://linux-net.osdl.org/index.php/Iproute2
+Entware team, entware.wl500g.info
+@@
+
+

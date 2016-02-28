@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/uclibc-opt/Makefile
+Package: uclibc-opt
+Version: 0.9.32-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc +libstdcpp +libpthread +librt +ldconfig +findutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: provides basic uclibc libraries
+Maintainer: Entware team, entware.wl500g.info
+Source: 
+Type: ipkg
+Description:  uclibc-opt is a metapackage to install Entware basic libraries.
+http://entware.wl500g.info
+Entware team, entware.wl500g.info
+@@
+
+

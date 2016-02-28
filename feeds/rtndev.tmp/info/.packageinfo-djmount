@@ -1,0 +1,25 @@
+Source-Makefile: feeds/rtndev/djmount/Makefile
+Package: djmount
+Submenu: Filesystem
+Version: 0.71-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libupnp +libfuse +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: mount MediaServers content as a Linux filesystem
+Maintainer: Entware team, entware.wl500g.info
+Source: djmount-0.71.tar.gz
+Type: ipkg
+Description:  djmount is a UPnP AV client. It mounts as a Linux filesystem the media content
+ of compatible UPnP AV devices. Djmount discovers automatically all UPnP Media
+ Servers on the network, and make the content available in a directory tree.
+ All shared files (e.g. Audio or Video files) are directly visible and can be
+ played using your favorite media player.
+http://djmount.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+

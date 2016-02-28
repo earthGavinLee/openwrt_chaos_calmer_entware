@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/cadaver/Makefile
+Package: cadaver
+Submenu: Filesystem
+Version: 0.23.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libexpat +libneon +libopenssl +libreadline
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Command-line WebDAV client
+Maintainer: Entware team, entware.wl500g.info
+Source: cadaver-0.23.3.tar.gz
+Type: ipkg
+Description:  cadaver is a command-line WebDAV client for Unix. It supports file upload, download, 
+ on-screen display, namespace operations (move/copy), collection creation and deletion, and locking operations.
+http://www.webdav.org/cadaver/
+Entware team, entware.wl500g.info
+@@
+
+

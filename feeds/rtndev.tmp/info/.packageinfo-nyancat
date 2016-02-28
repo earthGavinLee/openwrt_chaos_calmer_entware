@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/nyancat/Makefile
+Package: nyancat
+Version: 1.4.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Nyancat rendered in your terminal
+Maintainer: Entware team, entware.wl500g.info
+Source: nyancat-1.4.4.tar.bz2
+Type: ipkg
+Description:  Nyancat rendered in your terminal.
+https://github.com/klange/nyancat
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: feeds/rtndev/python-requests/Makefile
+Package: python-requests
+Submenu: Python
+Version: 2.4.1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python HTTP for Humans
+Maintainer: Entware team, entware.wl500g.info
+Source: requests-2.4.1.tar.gz
+Type: ipkg
+Description:  Requests allow you to send HTTP/1.1 requests. You can add headers,
+ form data, multipart files, and parameters with simple Python dictionaries,
+ and access the response data in the same way. It's powered by
+ httplib and urllib3, but it does all the hard work and crazy hacks for you.
+http://python-requests.org
+Entware team, entware.wl500g.info
+@@
+
+

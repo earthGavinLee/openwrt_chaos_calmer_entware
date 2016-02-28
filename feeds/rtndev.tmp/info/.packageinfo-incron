@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/incron/Makefile
+Package: incron
+Submenu: Filesystem
+Version: 0.5.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: inotify cron, a daemon system analogous to cron
+Maintainer: Entware team, entware.wl500g.info
+Source: incron-0.5.10.tar.gz
+Type: ipkg
+Description:  This program is the "inotify cron" system.  You can use it a similar way
+ as the regular cron. The difference is that the inotify cron handles
+ filesystem events rather than time periods.
+http://inotify.aiken.cz
+Entware team, entware.wl500g.info
+@@
+
+

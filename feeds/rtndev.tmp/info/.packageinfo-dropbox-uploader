@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/dropbox-uploader/Makefile
+Package: dropbox-uploader
+Submenu: File Transfer
+Version: 0.15-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bash +curl +sed +coreutils-basename +coreutils-date +coreutils-stat +coreutils-dd +coreutils-mkdir
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: BASH script for Dropbox
+Maintainer: Entware team, entware.wl500g.info
+Source: dropbox-uploader-0.15.tar.bz2
+Type: ipkg
+Description:  Dropbox Uploader is a BASH script which can be used to upload, download, 
+ delete or list files from Dropbox, an online file sharing, synchronization and backup service.
+https://github.com/andreafabrizi/Dropbox-Uploader
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/xpdf/Makefile
+Package: xpdf
+Version: 3.04-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: PDF manipulations tool
+Maintainer: Entware team, entware.wl500g.info
+Source: xpdf-3.04.tar.gz
+Type: ipkg
+Description:  Xpdf project includes a PDF text extractor, PDF-to-PostScript converter, and
+ various other utilities.
+http://www.foolabs.com/xpdf/
+Entware team, entware.wl500g.info
+@@
+
+

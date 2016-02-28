@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/tty-solitaire/Makefile
+Package: tty-solitaire
+Version: 0.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread libncursesw
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: klondlike solitaire game
+Maintainer: Entware team, entware.wl500g.info
+Source: tty-solitaire-0.2.0.tar.bz2
+Type: ipkg
+Description:  klondlike solitaire game.
+https://github.com/mpereira/tty-solitaire
+Entware team, entware.wl500g.info
+@@
+
+

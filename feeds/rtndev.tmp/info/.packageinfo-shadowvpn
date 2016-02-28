@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/shadowvpn/Makefile
+Package: shadowvpn
+Submenu: VPN
+Version: 0.1.6-20150721-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ShadowVPN
+Maintainer: Entware team, entware.wl500g.info
+Source: shadowvpn-0.1.6-20150721.tar.bz2
+Type: ipkg
+Description:  ShadowVPN is a fast, safe VPN based on libsodium.
+https://github.com/clowwindy/ShadowVPN
+Entware team, entware.wl500g.info
+@@
+
+

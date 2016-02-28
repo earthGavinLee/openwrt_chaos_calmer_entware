@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/zerotier/Makefile
+Package: zerotier
+Submenu: VPN
+Version: 1.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Ethernet virtualization engine
+Maintainer: Entware team, entware.wl500g.info
+Source: zerotier-1.0.3.tar.bz2
+Type: ipkg
+Description:  Create flat virtual Ethernet networks of almost unlimited size.
+https://www.zerotier.com/
+Entware team, entware.wl500g.info
+@@
+
+

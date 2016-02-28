@@ -1,0 +1,3183 @@
+Source-Makefile: feeds/rtndev/25volt/Makefile
+Package: 25volt
+Version: 1.0.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: 25volt a tool for monitoring Powercom/APC UPSs
+Maintainer: Entware team, entware.wl500g.info
+Source: 
+Type: ipkg
+Description:  25volt - A lightweight tool for monitoring APC Smart-UPS and Powercom WOW UPSs
+http://c61.no-ip.org/forum/viewtopic.php?f=2&t=69
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/3proxy/Makefile
+Package: 3proxy
+Submenu: Web Servers/Proxies
+Version: 0.7.1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: 3proxy free proxy server
+Maintainer: Entware team, entware.wl500g.info
+Source: 3proxy-0.7.1.2.tgz
+Type: ipkg
+Description:  3proxy is universal proxy server. It can be used to provide internal users
+ with fully controllable access to external resources or to provide external
+ users with access to internal resources.
+http://www.3proxy.ru
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/accel-ppp/Makefile
+Package: accel-ppp
+Submenu: VPN
+Version: 1.9.0-20150819-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpcre +libpthread +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: accel-ppp VPN server
+Maintainer: Entware team, entware.wl500g.info
+Source: accel-ppp-1.9.0-20150819.tar.bz2
+Type: ipkg
+Description:  The ACCEL-PPP is high performance PPTP/L2TP/PPPoE server for Linux. Userspace
+ daemon has its own PPP implementation, so it does not uses pppd and one process
+ (multi-threaded) manages all connections.
+http://sourceforge.net/apps/trac/accel-ppp/wiki
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/adsuck/Makefile
+Package: adsuck
+Submenu: IP Addresses and Names
+Version: 2.5.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libldns +libevent2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: adsuck is a small DNS server that spoofs blacklisted addresses
+Maintainer: Entware team, entware.wl500g.info
+Source: adsuck-2.5.0.tgz
+Type: ipkg
+Description:  adsuck is a small DNS server that spoofs blacklisted addresses and forwards
+ all other queries. The idea is to be able to prevent connections
+ to undesirable sites such as ad servers, crawlers and other nasties.
+https://opensource.conformal.com/wiki/adsuck
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/afpfs-ng/Makefile
+Package: afpfs-ng
+Submenu: Filesystem
+Version: 0.8.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libfuse +libgcrypt +libgmp +libncurses +libreadline
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a client for Apple Filing Protocol
+Maintainer: Entware team, entware.wl500g.info
+Source: afpfs-ng-0.8.1.tar.bz2
+Type: ipkg
+Description:  afpfs-ng is an Apple Filing Protocol client that will allow BSD, Linux
+ and Mac OS X systems to access files exported from a Mac OS system with
+ AFP over TCP.
+https://sites.google.com/site/alexthepuffin/home
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/angband/Makefile
+Package: angband
+Version: 4.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: single-player, text-based, dungeon simulation game
+Maintainer: Entware team, entware.wl500g.info
+Source: angband-4.0.1.tar.gz
+Type: ipkg
+Description:  Angband is a single-player, text-based, dungeon simulation derived from
+ the game Moria, which was in turn based on Rogue. It is often described
+ as a \"roguelike\" game because the look and feel of the game is still
+ quite similar to Rogue.
+http://rephial.org
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/asciinema/Makefile
+Package: asciinema
+Submenu: Terminal
+Version: 0.9.8-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-requests +ncurses-bin +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: A terminal sessions recorder
+Maintainer: Entware team, entware.wl500g.info
+Source: asciinema-0.9.8.tar.gz
+Type: ipkg
+Description:  asciinema lets you record your terminal sessions and share it with other geeks.
+http://asciinema.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/aspell/Makefile
+Package: aspell
+Version: 0.60.6.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libaspell
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: spell checker
+Maintainer: Entware team, entware.wl500g.info
+Source: aspell-0.60.6.1.tar.gz
+Type: ipkg
+Description:  GNU Aspell does a superior job of suggesting possible replacements for
+ a misspelled word than just about any other spell checker out there for
+ the English (and some other) language.
+http://aspell.net/
+Entware team, entware.wl500g.info
+@@
+
+Package: libaspell
+Version: 0.60.6.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: spell checker library
+Maintainer: Entware team, entware.wl500g.info
+Source: aspell-0.60.6.1.tar.gz
+Type: ipkg
+Description:  GNU Aspell library
+http://aspell.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/asterisk18-chan-dongle/Makefile
+Package: asterisk18-chan-dongle
+Submenu: Telephony
+Version: 1.1-20150411-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +asterisk18 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Huawei UMTS 3G dongle support
+Maintainer: Entware team, entware.wl500g.info
+Source: asterisk18-chan-dongle-1.1-20150411.tar.bz2
+Type: ipkg
+Description:  Asterisk channel driver for Huawei UMTS cards.
+ This channel driver is in alpha stage.
+https://github.com/bg111/asterisk-chan-dongle
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/automatic/Makefile
+Package: automatic
+Submenu: BitTorrent
+Version: 0.8.3-20150317-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpcre +libxml2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: RSS torrents downloader
+Maintainer: Entware team, entware.wl500g.info
+Source: automatic-0.8.3-20150317.tar.bz2
+Type: ipkg
+Description:  Automatic is a RSS daemon that downloads torrent files matching regular
+ expression patterns at certain intervals.
+https://github.com/1100101/Automatic
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/balance/Makefile
+Package: balance
+Submenu: Web Servers/Proxies
+Version: 3.56-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: load balancing proxy
+Maintainer: Entware team, entware.wl500g.info
+Source: balance-3.56.tar.gz
+Type: ipkg
+Description:  Balance is successful load balancing solution being a simple but powerful
+ generic tcp proxy with round robin load balancing and failover mechanisms.
+http://www.inlab.de/balance.html
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/bfgminer/Makefile
+Package: bfgminer
+Version: 5.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libcurl +libpthread +jansson +PACKAGE_bfgminer_curses:libncurses +PACKAGE_bfgminer_libusb:libusb-1.0
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: BFGMiner (Bitcoin miner)
+Maintainer: Entware team, entware.wl500g.info
+Source: bfgminer-5.2.0.zip
+Type: ipkg
+Description: Modular Bitcoin CPU/GPU/FPGA miner in C
+http://luke.dashjr.org/programs/bfgminer
+Entware team, entware.wl500g.info
+@@
+Config:
+config PACKAGE_bfgminer_curses
+	bool "Build with curses TUI support"
+	depends on PACKAGE_bfgminer
+	default y
+config PACKAGE_bfgminer_libusb
+	bool "Build with libusb support (X6500 & ZTEX)"
+	depends on PACKAGE_bfgminer
+	default y
+@@
+
+
+Source-Makefile: feeds/rtndev/bip/Makefile
+Package: bip
+Submenu: Instant Messaging
+Version: 0.8.9-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: multi user irc proxy
+Maintainer: Entware team, entware.wl500g.info
+Source: bip-0.8.9.tar.gz
+Type: ipkg
+Description:  Bip is an IRC proxy, which means it keeps connected to your preferred
+ IRC servers, can store the logs for you, and even send them back to your
+ IRC client(s) upon connection.
+https://projects.duckcorp.org/projects/bip
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/bochs/Makefile
+Package: bochs
+Version: 2.6.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: x86 PC emulator
+Maintainer: Entware team, entware.wl500g.info
+Source: bochs-2.6.8.tar.gz
+Type: ipkg
+Description:  Bochs is a highly portable open source IA-32 (x86) PC emulator written in C++,
+ that runs on most popular platforms. It includes emulation of the Intel x86 CPU,
+ common I/O devices, and a custom BIOS.
+http://bochs.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/cadaver/Makefile
+Package: cadaver
+Submenu: Filesystem
+Version: 0.23.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libexpat +libneon +libopenssl +libreadline
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: Command-line WebDAV client
+Maintainer: Entware team, entware.wl500g.info
+Source: cadaver-0.23.3.tar.gz
+Type: ipkg
+Description:  cadaver is a command-line WebDAV client for Unix. It supports file upload, download, 
+ on-screen display, namespace operations (move/copy), collection creation and deletion, and locking operations.
+http://www.webdav.org/cadaver/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/castget/Makefile
+Package: castget
+Submenu: File Transfer
+Version: 1.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +glib2 +libxml2 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: a command-line podcast downloader
+Maintainer: Entware team, entware.wl500g.info
+Source: castget-1.2.0.tar.bz2
+Type: ipkg
+Description:  castget is a simple, command-line based RSS enclosure downloader.
+ It is primarily intended for automatic, unattended downloading of podcasts.
+http://www.nongnu.org/castget
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/cavezofphear/Makefile
+Package: cavezofphear
+Version: 0.5.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: CAVEZ of PHEAR is a boulder dash / digger like game
+Maintainer: Entware team, entware.wl500g.info
+Source: phear-0.5.1.tar.bz2
+Type: ipkg
+Description:  CAVEZ of PHEAR is a boulder dash / digger like game for console / terminals
+ using ncurses. The goal of this game is to escape through the caves by
+ collecting diamonds and avoid falling stones.
+http://www.x86.no/cavezofphear
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/cpio/Makefile
+Package: cpio
+Version: 2.11-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: manage archives of files
+Maintainer: Entware team, entware.wl500g.info
+Source: cpio-2.11.tar.gz
+Type: ipkg
+Description:  GNU cpio does a superior job of suggesting possible replacements for
+ a misspelled word than just about any other spell checker out there for
+ the English (and some other) language.
+@GNU/cpio
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/cpubench/Makefile
+Package: cpubench
+Submenu: CPU tools
+Version: 0.6-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: OpenWRT's CPU Benchmark
+Maintainer: Entware team, entware.wl500g.info
+Source: 
+Type: ipkg
+Description:  OpenWRT's CPU Benchmark utility. It's firmware/repo independed, static version.
+http://wl500g.info/showthread.php?30444-%D1%F0%E0%E2%ED%E5%ED%E8%E5-%EF%F0%EE%E8%E7%E2%EE%E4%E8%F2%E5%EB%FC%ED%EE%F1%F2%E8-%EF%F0%EE%F6%E5%F1%F1%EE%F0%EE%E2-%F0%EE%F3%F2%E5%F0%EE%E2
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/crawl/Makefile
+Package: crawl
+Version: 0.12.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libstdcpp +libncursesw +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: Dungeon Crawl Stone Soup is a role-playing roguelike game
+Maintainer: Entware team, entware.wl500g.info
+Source: stone_soup-0.12.3.tar.xz
+Type: ipkg
+Description:  Dungeon Crawl Stone Soup is an open-source, single-player, role-playing
+ roguelike game of exploration and treasure-hunting in dungeons filled
+ with dangerous and unfriendly monsters in a quest to rescue
+ the mystifyingly fabulous Orb of Zot.
+http://crawl.develz.org
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/cron/Makefile
+Package: cron
+Version: 4.1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Vixie cron
+Maintainer: Entware team, entware.wl500g.info
+Source: cron_4.1.shar
+Type: ipkg
+Description:  Standart Vixie cron, with cron.d addition.
+ftp://ftp.isc.org/isc/cron
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/cups-pdf/Makefile
+Package: cups-pdf
+Submenu: Printing
+Version: 3.0beta2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ghostscript
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: PDF printer software
+Maintainer: Entware team, entware.wl500g.info
+Source: cups-pdf_3.0beta2.tar.gz
+Type: ipkg
+Description:  This software is designed to produce PDF files in a heterogeneous network by providing a PDF printer
+ on the central fileserver.
+http://www.cups-pdf.de/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/daemonize/Makefile
+Package: daemonize
+Version: 1.7.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: runs a command as a daemon
+Maintainer: Entware team, entware.wl500g.info
+Source: daemonize-1.7.6.tar.bz2
+Type: ipkg
+Description:  daemonize is a command-line utility that runs a command as a Unix daemon.
+http://software.clapper.org/daemonize/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/djmount/Makefile
+Package: djmount
+Submenu: Filesystem
+Version: 0.71-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libupnp +libfuse +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: mount MediaServers content as a Linux filesystem
+Maintainer: Entware team, entware.wl500g.info
+Source: djmount-0.71.tar.gz
+Type: ipkg
+Description:  djmount is a UPnP AV client. It mounts as a Linux filesystem the media content
+ of compatible UPnP AV devices. Djmount discovers automatically all UPnP Media
+ Servers on the network, and make the content available in a directory tree.
+ All shared files (e.g. Audio or Video files) are directly visible and can be
+ played using your favorite media player.
+http://djmount.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/dos2unix/Makefile
+Package: dos2unix
+Version: 7.2.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: text file format converter
+Maintainer: Entware team, entware.wl500g.info
+Source: dos2unix-7.2.3.tar.gz
+Type: ipkg
+Description:  DOS/Mac to Unix and vice versa text file format converter
+http://waterlan.home.xs4all.nl/dos2unix.html
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/dropbox-uploader/Makefile
+Package: dropbox-uploader
+Submenu: File Transfer
+Version: 0.15-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bash +curl +sed +coreutils-basename +coreutils-date +coreutils-stat +coreutils-dd +coreutils-mkdir
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: BASH script for Dropbox
+Maintainer: Entware team, entware.wl500g.info
+Source: dropbox-uploader-0.15.tar.bz2
+Type: ipkg
+Description:  Dropbox Uploader is a BASH script which can be used to upload, download, 
+ delete or list files from Dropbox, an online file sharing, synchronization and backup service.
+https://github.com/andreafabrizi/Dropbox-Uploader
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/duktape/Makefile
+Package: duktape
+Submenu: JavaScript
+Version: 1.2.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Duktape JavaScript engine
+Maintainer: Entware team, entware.wl500g.info
+Source: duktape-1.2.2.tar.xz
+Type: ipkg
+Description:  Duktape is an embeddable Javascript engine, with a focus on portability and
+ compact footprint.
+http://duktape.org
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/duo_unix/Makefile
+Package: libduo
+Version: 1.9.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libssp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: two-factor authentication for Unix systems (libpam library)
+Maintainer: Entware team, entware.wl500g.info
+Source: duo_unix-1.9.14.tar.gz
+Type: ipkg
+Description:  A library for two-factor authentication as a Duo:Security service
+https://www.duosecurity.com/
+Entware team, entware.wl500g.info
+@@
+
+Package: pam_duo
+Version: 1.9.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libssp +libduo +libpam
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: two-factor authentication for Unix systems (PAM library)
+Maintainer: Entware team, entware.wl500g.info
+Source: duo_unix-1.9.14.tar.gz
+Type: ipkg
+Description:  A library for PAM authentication as a Duo:Security service
+https://www.duosecurity.com/
+Entware team, entware.wl500g.info
+@@
+
+Package: duo_unix
+Version: 1.9.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libssp +libduo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Title: two-factor authentication for Unix systems
+Maintainer: Entware team, entware.wl500g.info
+Source: duo_unix-1.9.14.tar.gz
+Type: ipkg
+Description:  Provides simple two-factor authentication as a Duo:Security service
+https://www.duosecurity.com/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/eventlog/Makefile
+Package: eventlog
+Version: 0.2.12-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Extensible Binary Meta Language access library
+Maintainer: Entware team, entware.wl500g.info
+Source: eventlog_0.2.12.tar.gz
+Type: ipkg
+Description:  eventlog - Extensible Binary Meta Language access library
+http://matroska.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/fake-hwclock/Makefile
+Package: fake-hwclock
+Version: 0.9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: loads/saves current kernel clock from/to file
+Maintainer: Entware team, entware.wl500g.info
+Source: fake-hwclock_0.9.tar.gz
+Type: ipkg
+Description:  Trivial script to load/save current contents of the kernel clock
+ from/to a file. Helpful as a *bootstrap* clock on machines where
+ there isn't a useful RTC driver (e.g. on development boards). Using
+ NTP is still recommended on these machines to get to real time sync
+ once more of the system is up and running.
+ftp://ftp.debian.org/debian/pool/main/f/fake-hwclock
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/firefly/Makefile
+Package: firefly
+Version: r1696-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libvorbis +libflac +ffmpeg +libsqlite3 +libid3tag
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: sound
+Category: Sound
+Title: Firefly Media Server
+Maintainer: Entware team, entware.wl500g.info
+Source: firefly-r1696.tar.gz
+Type: ipkg
+Description:  Firefly Media Server (formerly mt-daapd) is an open-source audio media server
+ for the Roku SoundBridge and iTunes. It serves media files using Roku Server
+ Protocol (RSP) and Digital Audio Access Protocol (DAAP).
+http://www.fireflymediaserver.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/fontconfig/Makefile
+Package: fontconfig
+Submenu: Printing
+Version: 2.11.94-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libfreetype +libexpat +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Fontconfig, configure and customize font access
+Maintainer: Entware team, entware.wl500g.info
+Source: fontconfig-2.11.94.tar.bz2
+Type: ipkg
+Description:  The Fontconfig package contains a library and support programs used for
+ configuring and customizing font access.
+http://fontconfig.org
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/fuse-convmvfs/Makefile
+Package: fuse-convmvfs
+Submenu: Filesystem
+Version: 0.2.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libfuse +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: utils
+Category: Utilities
+Title: mirrors a whole filesystem tree from one charset to another
+Maintainer: Entware team, entware.wl500g.info
+Source: fuse-convmvfs-0.2.6.tar.gz
+Type: ipkg
+Description:  This is a filesystem converting file name from one character set to another. It's implemented by using FUSE.
+http://fuse-convmvfs.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/geeknote/Makefile
+Package: geeknote
+Version: 20140327-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-sqlite3 +python-openssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: command line client for Evernote
+Maintainer: Entware team, entware.wl500g.info
+Source: geeknote-20140327.tar.bz2
+Type: ipkg
+Description:  Geeknote is an opensource console client for Evernote. Use it for system administration needs, 
+ creating notes, notebooks, sync your local directories with Evernote notebooks.
+http://www.geeknote.me
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/ghostscript/Makefile
+Package: ghostscript
+Submenu: Printing
+Version: 9.16-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcupsimage +libfreetype +fontconfig +libtiff +libjpeg +libpng +libexpat +lcms +zlib +ghostscript-fonts-std +libdbus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: ghostscript/host
+Build-Types: host
+Section: utils
+Category: Utilities
+Title: ghostscript interpreter
+Maintainer: Entware team, entware.wl500g.info
+Source: ghostscript-9.16.tar.gz
+Type: ipkg
+Description:  Ghostscript is an interpreter for the PostScript language and for PDF.
+http://gimp-print.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/ghostscript-fonts-std/Makefile
+Package: ghostscript-fonts-std
+Submenu: Printing
+Version: 8.11-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ghostscript, standard fonts
+Maintainer: Entware team, entware.wl500g.info
+Source: ghostscript-fonts-std-8.11.tar.gz
+Type: ipkg
+Description:  Ghostscript, standard fonts.
+@SF/gs-fonts
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/ghostscript-gnu-gs-fonts-other/Makefile
+Package: ghostscript-gnu-gs-fonts-other
+Submenu: Printing
+Version: 6.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ghostscript, the other standard fonts
+Maintainer: Entware team, entware.wl500g.info
+Source: gnu-gs-fonts-other-6.0.tar.gz
+Type: ipkg
+Description:  Ghostscript, the 'other' standard fonts.
+@SF/gs-fonts
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/gnuchess/Makefile
+Package: gnuchess
+Version: 6.2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: GNU Chess
+Maintainer: Entware team, entware.wl500g.info
+Source: gnuchess-6.2.1.tar.gz
+Type: ipkg
+Description:  GNU Chess lets most modern computers play a full game of chess.
+ It has a plain terminal interface but supports visual interfaces such as XBoard.
+http://www.gnu.org/software/chess/chess.html
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/gutenprint/Makefile
+Package: gutenprint
+Submenu: Printing
+Version: 5.2.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcupsimage +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: gutenprint/host cups libiconv !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Build-Depends/host: libiconv/host
+Build-Types: host
+Section: utils
+Category: Utilities
+Title: Gutenprint CUPS drivers
+Maintainer: Entware team, entware.wl500g.info
+Source: gutenprint-5.2.10.tar.bz2
+Type: ipkg
+Description:  Gutenprint CUPS drivers for a wide range of Canon, Epson, HP and
+ compatible printers.
+http://gimp-print.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/i2pd/Makefile
+Package: i2pd
+Version: 0.10.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcryptoxx +boost-filesystem +boost-regex +boost-program_options +boost-date_time
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: simplified C++ implementation of I2P client
+Maintainer: Entware team, entware.wl500g.info
+Source: i2pd-0.10.0.tar.bz2
+Type: ipkg
+Description:  i2p router for Linux written on C++.
+https://github.com/orignal/i2pd
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/idle3-tools/Makefile
+Package: idle3-tools
+Submenu: disc
+Version: 0.9.3-r21-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: WD idle3 timer settings
+Maintainer: Entware team, entware.wl500g.info
+Source: idle3-tools-0.9.3-r21.tar.gz
+Type: ipkg
+Description:  This linux/unix utility can be used to remove or set the infamous idle3 timer
+ found on recent Western Digital Hard Disk Drives.
+http://idle3-tools.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/inadyn/Makefile
+Package: inadyn
+Submenu: IP Addresses and Names
+Version: 1.99.14-20150722-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a simple and small DDNS client
+Maintainer: Entware team, entware.wl500g.info
+Source: inadyn-1.99.14-20150722.tar.bz2
+Type: ipkg
+Description:  Inadyn is a simple and small DDNS client written in the C language. It can
+ maintain multiple host names with the same IP address, and has a web based
+ IP detection which runs well behind a NAT router. This is a fork by
+ Andrey Tikhomirov.
+https://github.com/troglobit/inadyn
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/incron/Makefile
+Package: incron
+Submenu: Filesystem
+Version: 0.5.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: inotify cron, a daemon system analogous to cron
+Maintainer: Entware team, entware.wl500g.info
+Source: incron-0.5.10.tar.gz
+Type: ipkg
+Description:  This program is the "inotify cron" system.  You can use it a similar way
+ as the regular cron. The difference is that the inotify cron handles
+ filesystem events rather than time periods.
+http://inotify.aiken.cz
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/inetutils/Makefile
+Package: inetutils
+Version: 1.9.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: GNU network utilities
+Maintainer: Entware team, entware.wl500g.info
+Source: inetutils-1.9.4.tar.gz
+Type: ipkg
+Description:  Inetutils is a collection of common network programs.
+http://www.gnu.org/software/inetutils/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/inotify-tools/Makefile
+Package: inotify-tools
+Submenu: Filesystem
+Version: 3.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: package of some commandline utilities relating to inotify
+Maintainer: Entware team, entware.wl500g.info
+Source: inotify-tools-3.14.tar.gz
+Type: ipkg
+Description:  This is a package of some commandline utilities relating to inotify. The general purpose
+ of this package is to allow inotify's features to be used from within shell scripts.
+https://github.com/downloads/rvoicilas/inotify-tools
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/istgt/Makefile
+Package: istgt
+Submenu: Filesystem
+Version: 20141125-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: An iSCSI target implementation
+Maintainer: Entware team, entware.wl500g.info
+Source: istgt-20141125.tar.gz
+Type: ipkg
+Description:  This is a BSD Port of istgt, which  provides iSCSI target side protocol
+ (refer to RFC3720 about iSCSI) and SPC-3 (SCSI Primary Commands - 3)
+ based logical unit emulation.
+http://www.peach.ne.jp/archives/istgt/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/jbigkit/Makefile
+Package: libjbig
+Submenu: Printing
+Version: 2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: JBIG1 implementation
+Maintainer: Entware team, entware.wl500g.info
+Source: jbigkit-2.1.tar.gz
+Type: ipkg
+Description:  JBIG1 data compression library
+http://www.cl.cam.ac.uk/~mgk25/jbigkit/
+Entware team, entware.wl500g.info
+@@
+
+Package: jbigkit
+Submenu: Printing
+Version: 2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjbig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: JBIG1 implementation
+Maintainer: Entware team, entware.wl500g.info
+Source: jbigkit-2.1.tar.gz
+Type: ipkg
+Description:  JBIG1 data compression standard (ITU-T T.82) utilities, which was designed
+ for bi-level high-resolution image data such as scanned documents.
+http://www.cl.cam.ac.uk/~mgk25/jbigkit/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/lcms/Makefile
+Package: lcms
+Submenu: Printing
+Version: 2.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtiff
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: little CMS color engine
+Maintainer: Entware team, entware.wl500g.info
+Source: lcms2-2.7.tar.gz
+Type: ipkg
+Description:  Little CMS color engine.
+http://www.littlecms.com/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/libebml/Makefile
+Package: libebml
+Version: 1.3.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Extensible Binary Meta Language access library
+Maintainer: Entware team, entware.wl500g.info
+Source: libebml-1.3.1.tar.bz2
+Type: ipkg
+Description:  libEBML - Extensible Binary Meta Language access library
+http://matroska.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/liberation-fonts/Makefile
+Package: liberation-fonts
+Submenu: Printing
+Version: 2.00.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ghostscript, standard fonts
+Maintainer: Entware team, entware.wl500g.info
+Source: liberation-fonts-ttf-2.00.1.tar.gz
+Type: ipkg
+Description:  The Liberation(tm) Fonts is a font family which aims at metric compatibility
+ with Arial, Times New Roman, and Courier New. It is sponsored by Red Hat
+https://fedorahosted.org/releases/l/i/liberation-fonts
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/libhid/Makefile
+Package: libhid
+Version: 0.2.16-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: a user-space USB HID access library
+Maintainer: Entware team, entware.wl500g.info
+Source: libhid-0.2.16.tar.gz
+Type: ipkg
+Description:  libhid provides a generic and flexible way to access and interact with USB HID
+ devices, much like libusb does for plain USB devices. It is based on libusb
+ 0.1, thus it requires no special HID support in the kernel. Furthermore, it
+ aims to support all operating system supported by libusb.
+http://libhid.alioth.debian.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/libmatroska/Makefile
+Package: libmatroska
+Version: 1.4.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libebml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: MKV container format library
+Maintainer: Entware team, entware.wl500g.info
+Source: libmatroska-1.4.2.tar.bz2
+Type: ipkg
+Description:  libmatroska - extensible open standard Audio/Video container format library
+http://matroska.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/limitcpu/Makefile
+Package: limitcpu
+Submenu: CPU tools
+Version: 2.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: CPU usage limiter
+Maintainer: Entware team, entware.wl500g.info
+Source: cpulimit-2.2.tar.gz
+Type: ipkg
+Description:  LimitCPU is a program to throttle the CPU cycles used by other applications.
+ It will monitor a process and make sure its CPU usage stays at or below
+ a given percentage.
+http://limitcpu.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/loadwatch/Makefile
+Package: loadwatch
+Submenu: CPU tools
+Version: 1.0+1.1alpha1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libelf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: run processes only at acceptable system load
+Maintainer: Entware team, entware.wl500g.info
+Source: loadwatch_1.0+1.1alpha1.orig.tar.gz
+Type: ipkg
+Description:  loadwatch allows one or more processes to run only when the load on a machine is within
+ certain bounds. The child processes are sent SIGSTOP when the machines load passes
+ the high load mark. The processes are sent SIGCONT only after the machines load drops
+ below the low load mark. The load is checked at a user definable interval.
+http://loadwatch.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/lynx/Makefile
+Package: lynx
+Version: 2.8.8rel.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libopenssl +zlib +libbz2 +libidn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a text web browser
+Maintainer: Entware team, entware.wl500g.info
+Source: lynx2.8.8rel.2.tar.bz2
+Type: ipkg
+Description:  Lynx is the text web browser
+http://lynx.isc.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/mathomatic/Makefile
+Package: mathomatic
+Version: 16.0.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Small computer algebra system.
+Maintainer: Entware team, entware.wl500g.info
+Source: mathomatic-16.0.5.tar.bz2
+Type: ipkg
+Description:  Mathomatic can symbolically solve, simplify, combine, and compare algebraic equations,
+ simultaneously performing generalized standard, complex number, modular, and polynomial arithmetic, as needed.
+http://www.mathomatic.org/math/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/mediafire-fuse/Makefile
+Package: mediafire-fuse
+Submenu: Filesystem
+Version: 0.6-20150702-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libfuse +jansson
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: mediafire account utilities
+Maintainer: Entware team, entware.wl500g.info
+Source: mediafire-fuse-0.6-20150702.tar.bz2
+Type: ipkg
+Description:  A simple shell for a mediafire account and fuse module that is able to mount
+ the mediafire share locally.
+https://github.com/TurboGit/mediafire-fuse
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/mediatomb/Makefile
+Package: mediatomb
+Version: 0.12.1-6
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libexif +libsqlite3 +id3lib +file +libpthread +libmagic +libjs +libexpat +libffmpeg +libstdcpp +libcurl +libopenssl ++BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: A powerfull UPNP media server
+Maintainer: Entware team, entware.wl500g.info
+Source: mediatomb-0.12.1.tar.gz
+Type: ipkg
+Description:  MediaTomb is an open source (GPL) UPnP MediaServer with a web UI and
+ with the aim of being fully compliant with DLNA/UPnP-AV clients.
+http://www.mediatomb.cc
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/microdc2/Makefile
+Package: microdc2
+Submenu: P2P
+Version: 0.15.6-20130828-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: microdc2
+Maintainer: Entware team, entware.wl500g.info
+Source: microdc2-0.15.6-20130828.tar.bz2
+Type: ipkg
+Description:  A command-line based Direct Connect client.
+https://github.com/jnwatts/microdc2
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/mkvtoolnix/Makefile
+Package: mkvtoolnix
+Version: 4.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +boost-filesystem +boost-regex +libbz2 +libexpat +libflac +liblzo +libmagic +libmatroska +libvorbis
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: tools for Matroska files
+Maintainer: Entware team, entware.wl500g.info
+Source: mkvtoolnix-4.2.0.tar.bz2
+Type: ipkg
+Description:  A set of tools to create, alter and inspect Matroska files.
+http://matroska.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/movgrab/Makefile
+Package: movgrab
+Version: 1.2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: movgrab is a commandline video downloader
+Maintainer: Entware team, entware.wl500g.info
+Source: movgrab-1.2.1.tar.gz
+Type: ipkg
+Description:  Movgrab is a command line tool for downloading video clips 
+ from websites such as YouTube, Daily Motion, Break.com, Vimeo, Blip.tv, Liveleak and others.
+https://sites.google.com/site/columscode/home/movgrab
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/mpdscribble/Makefile
+Package: mpdscribble
+Version: 0.23-20140213-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmpdclient +libsoup +libcurl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: sound
+Category: Sound
+Title: MPD player with Last.fm scrobbler
+Maintainer: Entware team, entware.wl500g.info
+Source: mpdscribble-0.23-20140213.tar.bz2
+Type: ipkg
+Description:  MPD scribble is a music player daemon client which submits information about
+ tracks being played to Last.fm.
+http://mpd.wikia.com/wiki/Client:Mpdscribble
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/ncdc/Makefile
+Package: ncdc
+Submenu: P2P
+Version: 1.19.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +bzip2 +libgnutls +libsqlite3 +glib2 +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: ncdc is a modern and lightweight DC client
+Maintainer: Entware team, entware.wl500g.info
+Source: ncdc-1.19.1.tar.gz
+Type: ipkg
+Description:  ncdc is a modern and lightweight direct connect client with a friendly
+ ncurses interface.
+http://dev.yorhel.nl/ncdc
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/nethack/Makefile
+Package: nethack
+Version: 3.4.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: NetHack is a single player dungeon exploration game
+Maintainer: Entware team, entware.wl500g.info
+Source: nethack-343-src.tgz
+Type: ipkg
+Description:  Unlike many other Dungeons & Dragons-inspired games, the emphasis in
+ NetHack is on discovering the detail of the dungeon and not simply killing
+ everything in sight - in fact, killing everything in sight is a good way
+ to die quickly.
+http://www.nethack.org
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/nethogs/Makefile
+Package: nethogs
+Version: 0.8.1-20140625-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libpcap +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: NetHogs is a small 'net top' tool
+Maintainer: Entware team, entware.wl500g.info
+Source: nethogs-0.8.1-20140625.tar.bz2
+Type: ipkg
+Description:  NetHogs is a small 'net top' tool. Instead of breaking the traffic down per protocol 
+ or per subnet, like most tools do, it groups bandwidth by process. NetHogs does not rely
+ on a special kernel module to be loaded. If there's suddenly a lot of network traffic, 
+ you can fire up NetHogs and immediately see which PID is causing this. This makes it easy 
+ to indentify programs that have gone wild and are suddenly taking up your bandwidth.
+http://nethogs.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/nload/Makefile
+Package: nload
+Version: 0.7.4-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: real time monitor for network traffic
+Maintainer: Entware team, entware.wl500g.info
+Source: nload-0.7.4.tar.gz
+Type: ipkg
+Description:  nload is a real time monitor for network traffic
+http://nload.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/nonroot/Makefile
+Package: nonroot
+Version: 20120608-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: run commands as non-root
+Maintainer: Entware team, entware.wl500g.info
+Source: nonroot-20120608.tar.bz2
+Type: ipkg
+Description:  This is a small utility for starting executables as a non-privileged user,
+ when running as the superuser (e.g. in an init-script).
+https://github.com/hampus/nonroot
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/nyancat/Makefile
+Package: nyancat
+Version: 1.4.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Nyancat rendered in your terminal
+Maintainer: Entware team, entware.wl500g.info
+Source: nyancat-1.4.4.tar.bz2
+Type: ipkg
+Description:  Nyancat rendered in your terminal.
+https://github.com/klange/nyancat
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/oscam/Makefile
+Package: oscam
+Version: 1.20-r10899-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcsclite +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: CAM software
+Maintainer: Entware team, entware.wl500g.info
+Source: oscam-1.20-r10899.tar.gz
+Type: ipkg
+Description:  OSCam is an Open Source Conditional Access Module software, based on the very good MpCS version 0.9d
+http://www.streamboard.tv/oscam/wiki
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/p0f/Makefile
+Package: p0f
+Version: 3.08b-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Purely passive traffic fingerprinting
+Maintainer: Entware team, entware.wl500g.info
+Source: p0f-3.08b.tgz
+Type: ipkg
+Description:  P0f is a tool that utilizes an array of sophisticated, purely passive traffic
+ fingerprinting mechanisms to identify the players behind any incidental TCP/IP
+ communications (often as little as a single normal SYN) without interfering in
+ any way.
+http://lcamtuf.coredump.cx/p0f3
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/p7zip/Makefile
+Package: p7zip
+Submenu: compression
+Version: 9.38.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Command line version of 7-zip for POSIX systems
+Maintainer: Entware team, entware.wl500g.info
+Source: p7zip_9.38.1_src_all.tar.bz2
+Type: ipkg
+Description:  Command line version of 7-zip for POSIX systems.
+http://p7zip.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/pagekite/Makefile
+Package: pagekite
+Version: 0.5.6d-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-openssl +openssl-util +python-socksipychain +net-tools-arp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: net
+Category: Network
+Title: Make localhost servers publicly visible.
+Maintainer: Entware team, entware.wl500g.info
+Source: pagekite-0.5.6d.tar.gz
+Type: ipkg
+Description:  PageKite is a system for running publicly visible servers (generally
+ web servers) on machines without a direct connection to the Internet,
+ such as mobile devices or computers behind restrictive firewalls.
+ PageKite works around NAT, firewalls and IP-address limitations by
+ using a combination of  tunnels and reverse proxies.
+http://pagekite.net
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/parted/Makefile
+Package: parted
+Submenu: disc
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblkid
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: manipulates partition tables
+Maintainer: Entware team, entware.wl500g.info
+Source: parted-3.2.tar.xz
+Type: ipkg
+Description:  GNU Parted manipulates partition tables. This is useful for creating space for
+ new operating systems, reorganizing disk usage, copying data on hard disks and
+ disk imaging.
+http://www.gnu.org/software/parted/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/portspoof/Makefile
+Package: portspoof
+Version: 1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: effective defense against port scanners
+Maintainer: Entware team, entware.wl500g.info
+Source: portspoof-1.2.tar.bz2
+Type: ipkg
+Description:  The Portspoof program primary goal is to enhance OS security through a set of
+ few techniques: all TCP ports are always open, every open TCP port emulates
+ a services. Portspoof can be used as an 'Exploitation Framework Frontend',
+ that turns your system into responsive and aggressive machine.
+https://github.com/drk1wi/portspoof
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/ptokax/Makefile
+Package: ptokax
+Submenu: P2P
+Version: 0.5.1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua +libpthread +zlib +libstdcpp +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: DC hub
+Maintainer: Entware team, entware.wl500g.info
+Source: 0.5.1.0-nix-src.tgz
+Type: ipkg
+Description:  PtokaX Direct Connect Hub is a multi-platform server application
+ for Neo-Modus Direct Connect Peer-To-Peer sharing network.
+http://www.czdc.org/PtokaX/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/pvpgn/Makefile
+Package: pvpgn
+Version: 199.r577-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3 +libstdcpp +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A bnetd based gaming network server emulation project
+Maintainer: Entware team, entware.wl500g.info
+Source: pvpgn-199.r577.tar.bz2
+Type: ipkg
+Description:  The PvPGN is a bnetd based gaming network server emulation project.
+ It curently supports all Westwood Online clients (Tiberian Sun,
+ Red Alert 1/2, Renegade, Emperor, NOX) and all Battle.Net clients
+ (Diablo 1/2, Starcraft/Broodwar, Warcraft 2/3 ROC/TFT).
+http://pvpgn.berlios.de
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-cheetah/Makefile
+Package: python-cheetah
+Submenu: Python
+Version: 2.4.4-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: lang
+Category: Languages
+Title: Python-powered template engine
+Maintainer: Entware team, entware.wl500g.info
+Source: Cheetah-2.4.4.tar.gz
+Type: ipkg
+Description:  Cheetah is an open source template engine and code generation tool, written in
+ Python. It can be used standalone or combined with other tools and frameworks.
+ Web development is its principle use, but Cheetah is very flexible and is also
+ being used to generate C++ game code, Java, sql, form emails and even Python
+ code.
+http://www.cheetahtemplate.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-cloudprint/Makefile
+Package: python-cloudprint
+Submenu: Python
+Version: 0.13-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-setuptools +python-cups +python-openssl +python-requests
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python bindings for the cloudprint API
+Maintainer: Entware team, entware.wl500g.info
+Source: cloudprint-0.13.tar.gz
+Type: ipkg
+Description:  This is a Python bindings for the cloudprint API, known as pycloudprint. It was written
+ for use with system-config-printer, but can be put to other uses as well.
+http://cyberelk.net/tim/software/pycloudprint/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-cups/Makefile
+Package: python-cups
+Submenu: Python
+Version: 1.9.73-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +cups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python bindings for the CUPS API
+Maintainer: Entware team, entware.wl500g.info
+Source: pycups-1.9.73.tar.bz2
+Type: ipkg
+Description:  This is a Python bindings for the CUPS API, known as pycups. It was written
+ for use with system-config-printer, but can be put to other uses as well.
+http://cyberelk.net/tim/software/pycups/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-gevent/Makefile
+Package: python-gevent
+Submenu: Python
+Version: 0.13.8-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-greenlet +libevent2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: lang
+Category: Languages
+Title: Python networking library
+Maintainer: Entware team, entware.wl500g.info
+Source: gevent-0.13.8.tar.gz
+Type: ipkg
+Description:  Gevent is a coroutine-based Python networking library that uses greenlet
+ to provide a high-level synchronous API on top of the libevent event loop.
+http://www.gevent.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-greenlet/Makefile
+Package: python-greenlet
+Submenu: Python
+Version: 0.4.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: lang
+Category: Languages
+Title: lightweight in-process concurrent programming
+Maintainer: Entware team, entware.wl500g.info
+Source: greenlet-0.4.7.zip
+Type: ipkg
+Description:  Lightweight in-process concurrent programming.
+https://pypi.python.org/pypi/greenlet
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-oauth/Makefile
+Package: python-oauth
+Submenu: Python
+Version: 1.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Library for OAuth 1.0a
+Maintainer: Entware team, entware.wl500g.info
+Source: oauth-1.0.1.tar.gz
+Type: ipkg
+Description:  Library for OAuth version 1.0a.
+http://code.google.com/p/oauth
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-onedrive/Makefile
+Package: python-onedrive
+Submenu: Python
+Version: 15.7.3-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-requests +python-yaml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python and CLI interface to MS OneDrive REST API v5.0
+Maintainer: Entware team, entware.wl500g.info
+Source: python-onedrive-15.7.3.tar.gz
+Type: ipkg
+Description:  Python and command-line interface for Microsoft LiveConnect OneDrive
+ REST API v5.0.
+https://github.com/mk-fg/python-onedrive
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-requests/Makefile
+Package: python-requests
+Submenu: Python
+Version: 2.4.1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python HTTP for Humans
+Maintainer: Entware team, entware.wl500g.info
+Source: requests-2.4.1.tar.gz
+Type: ipkg
+Description:  Requests allow you to send HTTP/1.1 requests. You can add headers,
+ form data, multipart files, and parameters with simple Python dictionaries,
+ and access the response data in the same way. It's powered by
+ httplib and urllib3, but it does all the hard work and crazy hacks for you.
+http://python-requests.org
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-socksipychain/Makefile
+Package: python-socksipychain
+Submenu: Python
+Version: 2.0.12-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Chaining support for socksipy
+Maintainer: Entware team, entware.wl500g.info
+Source: SocksipyChain-2.0.12.tar.gz
+Type: ipkg
+Description:  Chaining support for socksipy - a Python SOCKS client module. It provides
+ a socket-like interface that supports connections to any TCP service through
+ the use of a SOCKS4, SOCKS5 or HTTP proxy.
+https://pagekite.net/wiki/Floss/PySocksipyChain/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/python-werkzeug/Makefile
+Package: python-werkzeug
+Submenu: Python
+Version: 0.10.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: python utilities for WSGI applications
+Maintainer: Entware team, entware.wl500g.info
+Source: Werkzeug-0.10.4.tar.gz
+Type: ipkg
+Description:  Werkzeug started as simple collection of various utilities for WSGI
+ applications and has become one of the most advanced WSGI utility modules.
+http://werkzeug.pocoo.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/rtmpdump/Makefile
+Package: librtmp
+Version: 2.4-20121209-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: rtmpdump is a toolkit for RTMP streams
+Maintainer: Entware team, entware.wl500g.info
+Source: rtmpdump-2.3.tgz
+Type: ipkg
+Description:  librtmp is a RTMPDump Real-Time Messaging Protocol API
+http://rtmpdump.mplayerhq.hu/
+Entware team, entware.wl500g.info
+@@
+
+Package: rtmpdump
+Version: 2.4-20121209-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl +libpthread +librtmp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: rtmpdump is a toolkit for RTMP streams
+Maintainer: Entware team, entware.wl500g.info
+Source: rtmpdump-2.3.tgz
+Type: ipkg
+Description:  rtmpdump is a toolkit for RTMP streams. All forms of RTMP are supported.
+http://rtmpdump.mplayerhq.hu/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/rtorrent-easy-install/Makefile
+Package: rtorrent-easy-install
+Submenu: BitTorrent
+Version: 0.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rutorrent-plugin-rpc +screen +php5-cgi +lighttpd-mod-fastcgi +lighttpd-mod-scgi +lighttpd-mod-auth
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Easy installation script for rtorrent with web UI
+Maintainer: Entware team, entware.wl500g.info
+Source: 
+Type: ipkg
+Description:  This pakage helps to configure rtorrent with rutorrent web interface. Please
+ note, we assuming no lighttpd installed\configured on your system before!. 
+ Just answer a few question to get torrent-client working.
+http://github.com/abhinavseewoosungkur/scripts/blob/develop/rutorrent-entware.sh
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/rutorrent/Makefile
+Package: rutorrent
+Menu: 1
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rtorrent-rpc +coreutils-stat +coreutils-id +gzip +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Yet another web front-end for rTorrent
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:  ruTorrent is a front-end for the popular Bittorrent client rTorrent.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-autotools
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent autotools plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a autotools Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-check_port
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent check_port plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a check_port Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-chunks
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent chunks plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a chunks Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-cookies
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent cookies plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a cookies Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-cpuload
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent cpuload plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a cpuload Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-create
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent create plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a create Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-data
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent data plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a data Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-datadir
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent datadir plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a datadir Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-diskspace
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent diskspace plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a diskspace Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-edit
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent edit plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a edit Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-erasedata
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent erasedata plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a erasedata Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-extratio
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent extratio plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a extratio Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-extsearch
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent extsearch plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a extsearch Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-feeds
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent feeds plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a feeds Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-filedrop
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent filedrop plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a filedrop Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-geoip
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent geoip plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a geoip Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_getdir
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _getdir plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _getdir Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-history
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent history plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a history Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-httprpc
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent httprpc plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a httprpc Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-ipad
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent ipad plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a ipad Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-loginmgr
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent loginmgr plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a loginmgr Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-lookat
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent lookat plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a lookat Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-mediainfo
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent mediainfo plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a mediainfo Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_noty
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _noty plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _noty Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_noty2
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _noty2 plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _noty2 Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-ratio
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent ratio plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a ratio Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-retrackers
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent retrackers plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a retrackers Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rpc
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rpc plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rpc Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rss
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rss plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rss Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rssurlrewrite
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rssurlrewrite plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rssurlrewrite Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rutracker_check
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rutracker_check plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rutracker_check Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-scheduler
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent scheduler plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a scheduler Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-screenshots
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent +ffmpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent screenshots plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a screenshots Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-seedingtime
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent seedingtime plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a seedingtime Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-show_peers_like_wtorrent
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent show_peers_like_wtorrent plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a show_peers_like_wtorrent Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-source
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent source plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a source Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_task
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _task plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _task Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-theme
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent theme plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a theme Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-throttle
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent throttle plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a throttle Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-tracklabels
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent tracklabels plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a tracklabels Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-trafic
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent trafic plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a trafic Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-unpack
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent +unrar
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent unpack plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a unpack Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/sd-idle/Makefile
+Package: sd-idle
+Submenu: disc
+Version: 2.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Disk idle spindown program
+Maintainer: Entware team, entware.wl500g.info
+Source: 
+Type: ipkg
+Description:  sd-idle-2.6 is a disk idle spindown program for router firmware based on linux 2.6.
+http://tomatousb.org/forum/t-271603/sd-idle-2-6-disk-idle-spindown-program-for-2-6
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/shadowvpn/Makefile
+Package: shadowvpn
+Submenu: VPN
+Version: 0.1.6-20150721-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ShadowVPN
+Maintainer: Entware team, entware.wl500g.info
+Source: shadowvpn-0.1.6-20150721.tar.bz2
+Type: ipkg
+Description:  ShadowVPN is a fast, safe VPN based on libsodium.
+https://github.com/clowwindy/ShadowVPN
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/sitecopy/Makefile
+Package: sitecopy
+Submenu: Filesystem
+Version: 0.16.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libneon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: WebDAV sync utility
+Maintainer: Entware team, entware.wl500g.info
+Source: sitecopy-0.16.6.tar.gz
+Type: ipkg
+Description:  Sitecopy is for easily maintaining remote web sites. The program will upload
+ files to the server which have changed locally, and delete files
+ from the server which have been removed locally, to keep the remote site
+ synchronized with the local site with a single command.
+http://www.manyfish.co.uk/sitecopy/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/splix/Makefile
+Package: splix
+Submenu: Printing
+Version: 2.0.0-r315-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcupsimage +libjbig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Samsung CUPS drivers
+Maintainer: Entware team, entware.wl500g.info
+Source: splix-2.0.0-r315.tar.bz2
+Type: ipkg
+Description:  SpliX is a set of CUPS printer drivers for SPL (Samsung Printer Language)
+ printers.
+http://splix.ap2c.org/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/superstartrek/Makefile
+Package: superstartrek
+Version: 0.0.21-2010-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: A quite possibly the best of the Star Trek games from the 1970s
+Maintainer: Entware team, entware.wl500g.info
+Source: sstsrc.zip
+Type: ipkg
+Description:  Super Star Trek is quite possibly the best of the Star Trek games
+ from the 1970s. Of course, it does not make use of graphics, or even assume
+ a video display, but it still an interesting game to play, particularly for
+ those of us who don't have the reflexes we used to and  prefer a more cerebral
+ computer game.
+http://www.almy.us/sst.html
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/telegram-cli/Makefile
+Package: telegram-cli
+Submenu: Instant Messaging
+Version: 1.3.1-20150730-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libconfig +libopenssl +libreadline +libevent2 +jansson +libpthread +libncursesw +liblua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: telegram-cli/host
+Build-Types: host
+Section: net
+Category: Network
+Title: CLI for Telegram
+Maintainer: Entware team, entware.wl500g.info
+Source: telegram-cli-1.3.1-20150730.tar.bz2
+Type: ipkg
+Description:  Telegram messenger command-line interface
+https://github.com/vysheng/tg
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/transcode/Makefile
+Package: transcode
+Version: 1.1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: A/V transcoding suite
+Maintainer: Entware team, entware.wl500g.info
+Source: transcode-1.1.5.tar.bz2
+Type: ipkg
+Description:  Transcode is a suite of tools, all of which are command line utilities
+ for transcoding various video, audio, and container formats. Please note
+ it's compiled without any external recoding libraries because transcoding is
+ too heavy task for a router. Only few tools will be usefull, i.e. tcprobe.
+http://tcforge.berlios.de/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/tty-solitaire/Makefile
+Package: tty-solitaire
+Version: 0.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread libncursesw
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: klondlike solitaire game
+Maintainer: Entware team, entware.wl500g.info
+Source: tty-solitaire-0.2.0.tar.bz2
+Type: ipkg
+Description:  klondlike solitaire game.
+https://github.com/mpereira/tty-solitaire
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/ubuntu-fonts/Makefile
+Package: ubuntu-fonts
+Submenu: Printing
+Version: 0.80-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ubuntu-fonts
+Maintainer: Entware team, entware.wl500g.info
+Source: ubuntu-font-family-0.80.zip
+Type: ipkg
+Description:  The Ubuntu typeface has been specially created to complement the Ubuntu tone of
+ voice. It has a contemporary style and contains characteristics unique to the
+ Ubuntu brand that convey a precise, reliable and free attitude.
+http://font.ubuntu.com/download
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/uclibc-opt/Makefile
+Package: uclibc-opt
+Version: 0.9.32-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcc +libstdcpp +libpthread +librt +ldconfig +findutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: provides basic uclibc libraries
+Maintainer: Entware team, entware.wl500g.info
+Source: 
+Type: ipkg
+Description:  uclibc-opt is a metapackage to install Entware basic libraries.
+http://entware.wl500g.info
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/vitetris/Makefile
+Package: vitetris
+Version: 0.57-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: Terminal-based Tetris clone
+Maintainer: Entware team, entware.wl500g.info
+Source: vitetris-0.57.tar.gz
+Type: ipkg
+Description:  Vitetris is a terminal-based Tetris clone by Victor Nilsson. Gameplay is
+ much like the early Tetris games by Nintendo. Features include:
+ configurable keys, highscore table, two-player mode with garbage,
+ network play.
+http://www.victornils.net/tetris
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/vsftpd-ext/Makefile
+Package: vsftpd-ext
+Submenu: File Transfer
+Version: 3.0.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A fast and secure FTP server
+Maintainer: Entware team, entware.wl500g.info
+Source: vsftpd-3.0.2.tar.gz
+Type: ipkg
+Description: A fast and secure FTP server
+http://vsftpd.devnet.ru
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/wdfs/Makefile
+Package: wdfs
+Submenu: Filesystem
+Version: 1.4.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libneon +libfuse +libopenssl +glib2 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: webdav filesystem for fuse
+Maintainer: Entware team, entware.wl500g.info
+Source: wdfs-1.4.2.tar.gz
+Type: ipkg
+Description:  wdfs is a webdav filesystem that makes it possible to mount a webdav share
+ under linux, freebsd and apple mac os x. wdfs has some special features
+ for accessing subversion repositories via webdav.
+http://noedler.de/projekte/wdfs/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/weave-minimal/Makefile
+Package: weave-minimal
+Version: 1.5.1-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-sqlite3 +python-werkzeug +dtach +python-gevent +python-openssl +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a Firefox Sync Server
+Maintainer: Entware team, entware.wl500g.info
+Source: weave-minimal-1.5.1.tar.gz
+Type: ipkg
+Description:  This is a lightweight implementation of Mozilla User API v1.0 and Storage
+ API v1.1 without LDAP, MySQL, Redis etc. overhead.
+ DOES NOT WORK WITH FIREFOX 29 OR LATER.
+https://github.com/posativ/weave-minimal
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/whois/Makefile
+Package: whois
+Version: 5.2.9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: intelligent WHOIS client
+Maintainer: Entware team, entware.wl500g.info
+Source: whois_5.2.9.tar.xz
+Type: ipkg
+Description:  This package provides a commandline client for the WHOIS (RFC 3912) protocol,
+ which queries online servers for information such as contact details
+ for domains and IP address assignments. It can intelligently select
+ the appropriate WHOIS server for most queries.
+http://ftp.debian.org/debian/pool/main/w/whois
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/wmr-oregon/Makefile
+Package: wmr-oregon
+Version: 0.4-2013-01-23-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libhid +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Oregon Scientific USB Station Logger/Reader
+Maintainer: Entware team, entware.wl500g.info
+Source: wmr-oregon-0.4-2013-01-23.tar.gz
+Type: ipkg
+Description:  Oregon Scientific WMR100/200/WMRS200/I300/I600/RMS300/RMS600
+ USB Station Logger/Reader
+http://code.google.com/p/wmr/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/xawtv/Makefile
+Package: xawtv
+Version: 3.103-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libncursesw +libv4l +libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: a small suite of V4L apps
+Maintainer: Entware team, entware.wl500g.info
+Source: xawtv-3.103.tar.bz2
+Type: ipkg
+Description:  A small suite of applications for V4L devices.
+https://www.kraxel.org/blog/linux/xawtv/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/xpdf/Makefile
+Package: xpdf
+Version: 3.04-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: PDF manipulations tool
+Maintainer: Entware team, entware.wl500g.info
+Source: xpdf-3.04.tar.gz
+Type: ipkg
+Description:  Xpdf project includes a PDF text extractor, PDF-to-PostScript converter, and
+ various other utilities.
+http://www.foolabs.com/xpdf/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/yamdi/Makefile
+Package: yamdi
+Version: 1.9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: FLV metadata injector
+Maintainer: Entware team, entware.wl500g.info
+Source: yamdi-1.9.tar.gz
+Type: ipkg
+Description:  yamdi stands for Yet Another MetaData Injector and is a metadata injector
+ for FLV files. It adds the onMetaData event to your FLV files.
+http://yamdi.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/zerotier/Makefile
+Package: zerotier
+Submenu: VPN
+Version: 1.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Ethernet virtualization engine
+Maintainer: Entware team, entware.wl500g.info
+Source: zerotier-1.0.3.tar.bz2
+Type: ipkg
+Description:  Create flat virtual Ethernet networks of almost unlimited size.
+https://www.zerotier.com/
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/ziproxy/Makefile
+Package: ziproxy
+Submenu: Web Servers/Proxies
+Version: 3.3.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +giflib +libjpeg +libpng +zlib +libsasl2 +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: compressing HTTP proxy server
+Maintainer: Entware team, entware.wl500g.info
+Source: ziproxy-3.3.1.tar.bz2
+Type: ipkg
+Description:  ziproxy is a forwarding, non-caching and compressing HTTP proxy server.
+ Basically it squeezes images by converting them to lower quality JPEGs
+ and compresses (gzip) HTML and other text-like data.
+http://ziproxy.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+
+Source-Makefile: feeds/rtndev/zork/Makefile
+Package: zork
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: Zork (also named as Dungeon) is a text adventure game
+Maintainer: Entware team, entware.wl500g.info
+Source: GameZorkSource_1_0.zip
+Type: ipkg
+Description:  Zork (also named as Dungeon) is a text adventure game written by
+ Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling in 1980.
+http://richelbilderbeek.nl/GameZork.htm
+Entware team, entware.wl500g.info
+@@
+
+

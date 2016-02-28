@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/lcms/Makefile
+Package: lcms
+Submenu: Printing
+Version: 2.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtiff
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: little CMS color engine
+Maintainer: Entware team, entware.wl500g.info
+Source: lcms2-2.7.tar.gz
+Type: ipkg
+Description:  Little CMS color engine.
+http://www.littlecms.com/
+Entware team, entware.wl500g.info
+@@
+
+

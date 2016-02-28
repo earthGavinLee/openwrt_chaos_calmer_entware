@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/ghostscript-gnu-gs-fonts-other/Makefile
+Package: ghostscript-gnu-gs-fonts-other
+Submenu: Printing
+Version: 6.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ghostscript, the other standard fonts
+Maintainer: Entware team, entware.wl500g.info
+Source: gnu-gs-fonts-other-6.0.tar.gz
+Type: ipkg
+Description:  Ghostscript, the 'other' standard fonts.
+@SF/gs-fonts
+Entware team, entware.wl500g.info
+@@
+
+

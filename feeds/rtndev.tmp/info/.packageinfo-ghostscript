@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/ghostscript/Makefile
+Package: ghostscript
+Submenu: Printing
+Version: 9.16-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +cups +libcupsimage +libfreetype +fontconfig +libtiff +libjpeg +libpng +libexpat +lcms +zlib +ghostscript-fonts-std +libdbus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: ghostscript/host
+Build-Types: host
+Section: utils
+Category: Utilities
+Title: ghostscript interpreter
+Maintainer: Entware team, entware.wl500g.info
+Source: ghostscript-9.16.tar.gz
+Type: ipkg
+Description:  Ghostscript is an interpreter for the PostScript language and for PDF.
+http://gimp-print.sourceforge.net/
+Entware team, entware.wl500g.info
+@@
+
+

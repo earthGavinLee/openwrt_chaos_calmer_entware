@@ -1,0 +1,19 @@
+Source-Makefile: feeds/oldports/tesseract/Makefile
+Package: tesseract
+Version: 3.04.00-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libleptonica +libpthread +librt +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Tesseract Open Source OCR Engine
+Maintainer: 
+Source: tesseract-ocr-3.04.00.tar.bz2
+Type: ipkg
+Description: Tesseract Open Source OCR Engine
+https://github.com/tesseract-ocr
+
+@@
+
+

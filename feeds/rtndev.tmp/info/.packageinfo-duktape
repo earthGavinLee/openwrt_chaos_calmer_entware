@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/duktape/Makefile
+Package: duktape
+Submenu: JavaScript
+Version: 1.2.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Duktape JavaScript engine
+Maintainer: Entware team, entware.wl500g.info
+Source: duktape-1.2.2.tar.xz
+Type: ipkg
+Description:  Duktape is an embeddable Javascript engine, with a focus on portability and
+ compact footprint.
+http://duktape.org
+Entware team, entware.wl500g.info
+@@
+
+

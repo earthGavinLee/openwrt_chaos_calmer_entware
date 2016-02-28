@@ -1,0 +1,53 @@
+Source-Makefile: feeds/rtndev/duo_unix/Makefile
+Package: libduo
+Version: 1.9.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libssp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: two-factor authentication for Unix systems (libpam library)
+Maintainer: Entware team, entware.wl500g.info
+Source: duo_unix-1.9.14.tar.gz
+Type: ipkg
+Description:  A library for two-factor authentication as a Duo:Security service
+https://www.duosecurity.com/
+Entware team, entware.wl500g.info
+@@
+
+Package: pam_duo
+Version: 1.9.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libssp +libduo +libpam
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: two-factor authentication for Unix systems (PAM library)
+Maintainer: Entware team, entware.wl500g.info
+Source: duo_unix-1.9.14.tar.gz
+Type: ipkg
+Description:  A library for PAM authentication as a Duo:Security service
+https://www.duosecurity.com/
+Entware team, entware.wl500g.info
+@@
+
+Package: duo_unix
+Version: 1.9.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libssp +libduo
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Title: two-factor authentication for Unix systems
+Maintainer: Entware team, entware.wl500g.info
+Source: duo_unix-1.9.14.tar.gz
+Type: ipkg
+Description:  Provides simple two-factor authentication as a Duo:Security service
+https://www.duosecurity.com/
+Entware team, entware.wl500g.info
+@@
+
+

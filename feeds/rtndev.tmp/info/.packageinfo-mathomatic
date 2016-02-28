@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/mathomatic/Makefile
+Package: mathomatic
+Version: 16.0.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Small computer algebra system.
+Maintainer: Entware team, entware.wl500g.info
+Source: mathomatic-16.0.5.tar.bz2
+Type: ipkg
+Description:  Mathomatic can symbolically solve, simplify, combine, and compare algebraic equations,
+ simultaneously performing generalized standard, complex number, modular, and polynomial arithmetic, as needed.
+http://www.mathomatic.org/math/
+Entware team, entware.wl500g.info
+@@
+
+

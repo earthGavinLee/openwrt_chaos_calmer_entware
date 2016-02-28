@@ -1,0 +1,19 @@
+Source-Makefile: feeds/oldports/pyload/Makefile
+Package: pyload
+Version: 0.4.9-20150804-1a
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-curl +python-sqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A fast, lightweight and full featured download manager
+Maintainer: 
+Source: pyload-0.4.9-20150804.tar.bz2
+Type: ipkg
+Description: A fast, lightweight and full featured download manager
+http://pyload.org
+
+@@
+
+

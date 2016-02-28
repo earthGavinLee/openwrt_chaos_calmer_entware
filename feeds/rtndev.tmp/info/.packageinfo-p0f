@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/p0f/Makefile
+Package: p0f
+Version: 3.08b-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Purely passive traffic fingerprinting
+Maintainer: Entware team, entware.wl500g.info
+Source: p0f-3.08b.tgz
+Type: ipkg
+Description:  P0f is a tool that utilizes an array of sophisticated, purely passive traffic
+ fingerprinting mechanisms to identify the players behind any incidental TCP/IP
+ communications (often as little as a single normal SYN) without interfering in
+ any way.
+http://lcamtuf.coredump.cx/p0f3
+Entware team, entware.wl500g.info
+@@
+
+

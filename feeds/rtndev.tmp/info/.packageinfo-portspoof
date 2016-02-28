@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/portspoof/Makefile
+Package: portspoof
+Version: 1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: effective defense against port scanners
+Maintainer: Entware team, entware.wl500g.info
+Source: portspoof-1.2.tar.bz2
+Type: ipkg
+Description:  The Portspoof program primary goal is to enhance OS security through a set of
+ few techniques: all TCP ports are always open, every open TCP port emulates
+ a services. Portspoof can be used as an 'Exploitation Framework Frontend',
+ that turns your system into responsive and aggressive machine.
+https://github.com/drk1wi/portspoof
+Entware team, entware.wl500g.info
+@@
+
+

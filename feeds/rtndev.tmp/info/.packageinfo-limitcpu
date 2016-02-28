@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/limitcpu/Makefile
+Package: limitcpu
+Submenu: CPU tools
+Version: 2.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: CPU usage limiter
+Maintainer: Entware team, entware.wl500g.info
+Source: cpulimit-2.2.tar.gz
+Type: ipkg
+Description:  LimitCPU is a program to throttle the CPU cycles used by other applications.
+ It will monitor a process and make sure its CPU usage stays at or below
+ a given percentage.
+http://limitcpu.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+

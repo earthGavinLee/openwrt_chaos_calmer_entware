@@ -1,0 +1,25 @@
+Source-Makefile: feeds/rtndev/python-cheetah/Makefile
+Package: python-cheetah
+Submenu: Python
+Version: 2.4.4-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: lang
+Category: Languages
+Title: Python-powered template engine
+Maintainer: Entware team, entware.wl500g.info
+Source: Cheetah-2.4.4.tar.gz
+Type: ipkg
+Description:  Cheetah is an open source template engine and code generation tool, written in
+ Python. It can be used standalone or combined with other tools and frameworks.
+ Web development is its principle use, but Cheetah is very flexible and is also
+ being used to generate C++ game code, Java, sql, form emails and even Python
+ code.
+http://www.cheetahtemplate.org/
+Entware team, entware.wl500g.info
+@@
+
+

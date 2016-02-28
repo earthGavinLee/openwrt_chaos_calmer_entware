@@ -1,0 +1,23 @@
+Source-Makefile: feeds/rtndev/superstartrek/Makefile
+Package: superstartrek
+Version: 0.0.21-2010-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: A quite possibly the best of the Star Trek games from the 1970s
+Maintainer: Entware team, entware.wl500g.info
+Source: sstsrc.zip
+Type: ipkg
+Description:  Super Star Trek is quite possibly the best of the Star Trek games
+ from the 1970s. Of course, it does not make use of graphics, or even assume
+ a video display, but it still an interesting game to play, particularly for
+ those of us who don't have the reflexes we used to and  prefer a more cerebral
+ computer game.
+http://www.almy.us/sst.html
+Entware team, entware.wl500g.info
+@@
+
+

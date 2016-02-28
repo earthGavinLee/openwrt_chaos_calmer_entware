@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/wmr-oregon/Makefile
+Package: wmr-oregon
+Version: 0.4-2013-01-23-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libhid +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Oregon Scientific USB Station Logger/Reader
+Maintainer: Entware team, entware.wl500g.info
+Source: wmr-oregon-0.4-2013-01-23.tar.gz
+Type: ipkg
+Description:  Oregon Scientific WMR100/200/WMRS200/I300/I600/RMS300/RMS600
+ USB Station Logger/Reader
+http://code.google.com/p/wmr/
+Entware team, entware.wl500g.info
+@@
+
+

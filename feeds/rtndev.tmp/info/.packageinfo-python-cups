@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/python-cups/Makefile
+Package: python-cups
+Submenu: Python
+Version: 1.9.73-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +cups
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python bindings for the CUPS API
+Maintainer: Entware team, entware.wl500g.info
+Source: pycups-1.9.73.tar.bz2
+Type: ipkg
+Description:  This is a Python bindings for the CUPS API, known as pycups. It was written
+ for use with system-config-printer, but can be put to other uses as well.
+http://cyberelk.net/tim/software/pycups/
+Entware team, entware.wl500g.info
+@@
+
+

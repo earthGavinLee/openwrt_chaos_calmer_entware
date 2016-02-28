@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/inotify-tools/Makefile
+Package: inotify-tools
+Submenu: Filesystem
+Version: 3.14-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: package of some commandline utilities relating to inotify
+Maintainer: Entware team, entware.wl500g.info
+Source: inotify-tools-3.14.tar.gz
+Type: ipkg
+Description:  This is a package of some commandline utilities relating to inotify. The general purpose
+ of this package is to allow inotify's features to be used from within shell scripts.
+https://github.com/downloads/rvoicilas/inotify-tools
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: feeds/oldports/nagios-plugins/Makefile
+Package: nagios-plugins
+Version: 2.0.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +bash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Title: plugins for Nagios checks
+Maintainer: 
+Source: nagios-plugins-2.0.3.tar.gz
+Type: ipkg
+Description: plugins for Nagios checks
+http://nagiosplug.sourceforge.net/
+
+@@
+
+

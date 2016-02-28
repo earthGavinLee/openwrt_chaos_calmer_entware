@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/weave-minimal/Makefile
+Package: weave-minimal
+Version: 1.5.1-4
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-sqlite3 +python-werkzeug +dtach +python-gevent +python-openssl +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a Firefox Sync Server
+Maintainer: Entware team, entware.wl500g.info
+Source: weave-minimal-1.5.1.tar.gz
+Type: ipkg
+Description:  This is a lightweight implementation of Mozilla User API v1.0 and Storage
+ API v1.1 without LDAP, MySQL, Redis etc. overhead.
+ DOES NOT WORK WITH FIREFOX 29 OR LATER.
+https://github.com/posativ/weave-minimal
+Entware team, entware.wl500g.info
+@@
+
+

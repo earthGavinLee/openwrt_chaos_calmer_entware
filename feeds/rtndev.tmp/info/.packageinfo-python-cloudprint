@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/python-cloudprint/Makefile
+Package: python-cloudprint
+Submenu: Python
+Version: 0.13-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-setuptools +python-cups +python-openssl +python-requests
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python bindings for the cloudprint API
+Maintainer: Entware team, entware.wl500g.info
+Source: cloudprint-0.13.tar.gz
+Type: ipkg
+Description:  This is a Python bindings for the cloudprint API, known as pycloudprint. It was written
+ for use with system-config-printer, but can be put to other uses as well.
+http://cyberelk.net/tim/software/pycloudprint/
+Entware team, entware.wl500g.info
+@@
+
+

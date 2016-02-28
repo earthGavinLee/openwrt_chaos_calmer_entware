@@ -1,0 +1,23 @@
+Source-Makefile: feeds/rtndev/inadyn/Makefile
+Package: inadyn
+Submenu: IP Addresses and Names
+Version: 1.99.14-20150722-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a simple and small DDNS client
+Maintainer: Entware team, entware.wl500g.info
+Source: inadyn-1.99.14-20150722.tar.bz2
+Type: ipkg
+Description:  Inadyn is a simple and small DDNS client written in the C language. It can
+ maintain multiple host names with the same IP address, and has a web based
+ IP detection which runs well behind a NAT router. This is a fork by
+ Andrey Tikhomirov.
+https://github.com/troglobit/inadyn
+Entware team, entware.wl500g.info
+@@
+
+

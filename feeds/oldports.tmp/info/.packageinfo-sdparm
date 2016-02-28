@@ -1,0 +1,20 @@
+Source-Makefile: feeds/oldports/sdparm/Makefile
+Package: sdparm
+Submenu: disc
+Version: 1.09-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Read or modify SCSI or USB disk parameters
+Maintainer: 
+Source: sdparm-1.09.tar.bz2
+Type: ipkg
+Description:  The sdparm utility outputs and in some cases modifies SCSI device parameters.
+http://sg.danny.cz/sg/sdparm.html
+
+@@
+
+

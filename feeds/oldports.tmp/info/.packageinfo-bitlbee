@@ -1,0 +1,24 @@
+Source-Makefile: feeds/oldports/bitlbee/Makefile
+Package: bitlbee
+Submenu: Instant Messaging
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +glib2 +libgcrypt +libotr +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: glib2 !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: IRC gateway to IM chat networks
+Maintainer: 
+Source: bitlbee-3.2.tar.gz
+Type: ipkg
+Description: IRC gateway to IM chat networks
+http://www.bitlbee.org/
+
+@@
+Config:
+  source "feeds/oldports/bitlbee/Config.in"
+@@
+
+

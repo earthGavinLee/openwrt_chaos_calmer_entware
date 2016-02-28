@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/microdc2/Makefile
+Package: microdc2
+Submenu: P2P
+Version: 0.15.6-20130828-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: microdc2
+Maintainer: Entware team, entware.wl500g.info
+Source: microdc2-0.15.6-20130828.tar.bz2
+Type: ipkg
+Description:  A command-line based Direct Connect client.
+https://github.com/jnwatts/microdc2
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/istgt/Makefile
+Package: istgt
+Submenu: Filesystem
+Version: 20141125-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: An iSCSI target implementation
+Maintainer: Entware team, entware.wl500g.info
+Source: istgt-20141125.tar.gz
+Type: ipkg
+Description:  This is a BSD Port of istgt, which  provides iSCSI target side protocol
+ (refer to RFC3720 about iSCSI) and SPC-3 (SCSI Primary Commands - 3)
+ based logical unit emulation.
+http://www.peach.ne.jp/archives/istgt/
+Entware team, entware.wl500g.info
+@@
+
+

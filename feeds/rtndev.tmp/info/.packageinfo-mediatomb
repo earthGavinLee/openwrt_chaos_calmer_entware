@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/mediatomb/Makefile
+Package: mediatomb
+Version: 0.12.1-6
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libexif +libsqlite3 +id3lib +file +libpthread +libmagic +libjs +libexpat +libffmpeg +libstdcpp +libcurl +libopenssl ++BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: multimedia
+Category: Multimedia
+Title: A powerfull UPNP media server
+Maintainer: Entware team, entware.wl500g.info
+Source: mediatomb-0.12.1.tar.gz
+Type: ipkg
+Description:  MediaTomb is an open source (GPL) UPnP MediaServer with a web UI and
+ with the aim of being fully compliant with DLNA/UPnP-AV clients.
+http://www.mediatomb.cc
+Entware team, entware.wl500g.info
+@@
+
+

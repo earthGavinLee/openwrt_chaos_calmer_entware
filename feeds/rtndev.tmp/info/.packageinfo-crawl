@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/crawl/Makefile
+Package: crawl
+Version: 0.12.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libstdcpp +libncursesw +libsqlite3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: Dungeon Crawl Stone Soup is a role-playing roguelike game
+Maintainer: Entware team, entware.wl500g.info
+Source: stone_soup-0.12.3.tar.xz
+Type: ipkg
+Description:  Dungeon Crawl Stone Soup is an open-source, single-player, role-playing
+ roguelike game of exploration and treasure-hunting in dungeons filled
+ with dangerous and unfriendly monsters in a quest to rescue
+ the mystifyingly fabulous Orb of Zot.
+http://crawl.develz.org
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/zork/Makefile
+Package: zork
+Version: 1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: Zork (also named as Dungeon) is a text adventure game
+Maintainer: Entware team, entware.wl500g.info
+Source: GameZorkSource_1_0.zip
+Type: ipkg
+Description:  Zork (also named as Dungeon) is a text adventure game written by
+ Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling in 1980.
+http://richelbilderbeek.nl/GameZork.htm
+Entware team, entware.wl500g.info
+@@
+
+

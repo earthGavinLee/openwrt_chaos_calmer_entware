@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/dos2unix/Makefile
+Package: dos2unix
+Version: 7.2.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: text file format converter
+Maintainer: Entware team, entware.wl500g.info
+Source: dos2unix-7.2.3.tar.gz
+Type: ipkg
+Description:  DOS/Mac to Unix and vice versa text file format converter
+http://waterlan.home.xs4all.nl/dos2unix.html
+Entware team, entware.wl500g.info
+@@
+
+

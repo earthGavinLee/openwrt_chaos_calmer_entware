@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/automatic/Makefile
+Package: automatic
+Submenu: BitTorrent
+Version: 0.8.3-20150317-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libpcre +libxml2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: RSS torrents downloader
+Maintainer: Entware team, entware.wl500g.info
+Source: automatic-0.8.3-20150317.tar.bz2
+Type: ipkg
+Description:  Automatic is a RSS daemon that downloads torrent files matching regular
+ expression patterns at certain intervals.
+https://github.com/1100101/Automatic
+Entware team, entware.wl500g.info
+@@
+
+

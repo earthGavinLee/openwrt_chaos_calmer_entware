@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/oscam/Makefile
+Package: oscam
+Version: 1.20-r10899-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcsclite +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: CAM software
+Maintainer: Entware team, entware.wl500g.info
+Source: oscam-1.20-r10899.tar.gz
+Type: ipkg
+Description:  OSCam is an Open Source Conditional Access Module software, based on the very good MpCS version 0.9d
+http://www.streamboard.tv/oscam/wiki
+Entware team, entware.wl500g.info
+@@
+
+

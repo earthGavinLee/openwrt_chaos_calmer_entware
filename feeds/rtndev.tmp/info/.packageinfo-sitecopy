@@ -1,0 +1,23 @@
+Source-Makefile: feeds/rtndev/sitecopy/Makefile
+Package: sitecopy
+Submenu: Filesystem
+Version: 0.16.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libexpat +libneon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: WebDAV sync utility
+Maintainer: Entware team, entware.wl500g.info
+Source: sitecopy-0.16.6.tar.gz
+Type: ipkg
+Description:  Sitecopy is for easily maintaining remote web sites. The program will upload
+ files to the server which have changed locally, and delete files
+ from the server which have been removed locally, to keep the remote site
+ synchronized with the local site with a single command.
+http://www.manyfish.co.uk/sitecopy/
+Entware team, entware.wl500g.info
+@@
+
+

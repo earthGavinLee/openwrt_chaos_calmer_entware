@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/inetutils/Makefile
+Package: inetutils
+Version: 1.9.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: GNU network utilities
+Maintainer: Entware team, entware.wl500g.info
+Source: inetutils-1.9.4.tar.gz
+Type: ipkg
+Description:  Inetutils is a collection of common network programs.
+http://www.gnu.org/software/inetutils/
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: feeds/rtndev/fake-hwclock/Makefile
+Package: fake-hwclock
+Version: 0.9-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: loads/saves current kernel clock from/to file
+Maintainer: Entware team, entware.wl500g.info
+Source: fake-hwclock_0.9.tar.gz
+Type: ipkg
+Description:  Trivial script to load/save current contents of the kernel clock
+ from/to a file. Helpful as a *bootstrap* clock on machines where
+ there isn't a useful RTC driver (e.g. on development boards). Using
+ NTP is still recommended on these machines to get to real time sync
+ once more of the system is up and running.
+ftp://ftp.debian.org/debian/pool/main/f/fake-hwclock
+Entware team, entware.wl500g.info
+@@
+
+

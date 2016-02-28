@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/p7zip/Makefile
+Package: p7zip
+Submenu: compression
+Version: 9.38.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Command line version of 7-zip for POSIX systems
+Maintainer: Entware team, entware.wl500g.info
+Source: p7zip_9.38.1_src_all.tar.bz2
+Type: ipkg
+Description:  Command line version of 7-zip for POSIX systems.
+http://p7zip.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: feeds/rtndev/wdfs/Makefile
+Package: wdfs
+Submenu: Filesystem
+Version: 1.4.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libneon +libfuse +libopenssl +glib2 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: webdav filesystem for fuse
+Maintainer: Entware team, entware.wl500g.info
+Source: wdfs-1.4.2.tar.gz
+Type: ipkg
+Description:  wdfs is a webdav filesystem that makes it possible to mount a webdav share
+ under linux, freebsd and apple mac os x. wdfs has some special features
+ for accessing subversion repositories via webdav.
+http://noedler.de/projekte/wdfs/
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/asciinema/Makefile
+Package: asciinema
+Submenu: Terminal
+Version: 0.9.8-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-requests +ncurses-bin +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: A terminal sessions recorder
+Maintainer: Entware team, entware.wl500g.info
+Source: asciinema-0.9.8.tar.gz
+Type: ipkg
+Description:  asciinema lets you record your terminal sessions and share it with other geeks.
+http://asciinema.org/
+Entware team, entware.wl500g.info
+@@
+
+

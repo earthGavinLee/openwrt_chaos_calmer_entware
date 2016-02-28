@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/rtorrent-easy-install/Makefile
+Package: rtorrent-easy-install
+Submenu: BitTorrent
+Version: 0.2-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rutorrent-plugin-rpc +screen +php5-cgi +lighttpd-mod-fastcgi +lighttpd-mod-scgi +lighttpd-mod-auth
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Easy installation script for rtorrent with web UI
+Maintainer: Entware team, entware.wl500g.info
+Source: 
+Type: ipkg
+Description:  This pakage helps to configure rtorrent with rutorrent web interface. Please
+ note, we assuming no lighttpd installed\configured on your system before!. 
+ Just answer a few question to get torrent-client working.
+http://github.com/abhinavseewoosungkur/scripts/blob/develop/rutorrent-entware.sh
+Entware team, entware.wl500g.info
+@@
+
+

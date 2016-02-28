@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/geeknote/Makefile
+Package: geeknote
+Version: 20140327-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-sqlite3 +python-openssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: command line client for Evernote
+Maintainer: Entware team, entware.wl500g.info
+Source: geeknote-20140327.tar.bz2
+Type: ipkg
+Description:  Geeknote is an opensource console client for Evernote. Use it for system administration needs, 
+ creating notes, notebooks, sync your local directories with Evernote notebooks.
+http://www.geeknote.me
+Entware team, entware.wl500g.info
+@@
+
+

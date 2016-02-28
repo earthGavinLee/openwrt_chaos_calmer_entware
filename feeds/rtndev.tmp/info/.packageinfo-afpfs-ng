@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/afpfs-ng/Makefile
+Package: afpfs-ng
+Submenu: Filesystem
+Version: 0.8.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libfuse +libgcrypt +libgmp +libncurses +libreadline
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: a client for Apple Filing Protocol
+Maintainer: Entware team, entware.wl500g.info
+Source: afpfs-ng-0.8.1.tar.bz2
+Type: ipkg
+Description:  afpfs-ng is an Apple Filing Protocol client that will allow BSD, Linux
+ and Mac OS X systems to access files exported from a Mac OS system with
+ AFP over TCP.
+https://sites.google.com/site/alexthepuffin/home
+Entware team, entware.wl500g.info
+@@
+
+

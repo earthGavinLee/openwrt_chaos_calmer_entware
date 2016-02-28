@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/cups-pdf/Makefile
+Package: cups-pdf
+Submenu: Printing
+Version: 3.0beta2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ghostscript
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: PDF printer software
+Maintainer: Entware team, entware.wl500g.info
+Source: cups-pdf_3.0beta2.tar.gz
+Type: ipkg
+Description:  This software is designed to produce PDF files in a heterogeneous network by providing a PDF printer
+ on the central fileserver.
+http://www.cups-pdf.de/
+Entware team, entware.wl500g.info
+@@
+
+

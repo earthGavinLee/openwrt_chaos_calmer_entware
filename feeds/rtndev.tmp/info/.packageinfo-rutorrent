@@ -1,0 +1,777 @@
+Source-Makefile: feeds/rtndev/rutorrent/Makefile
+Package: rutorrent
+Menu: 1
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rtorrent-rpc +coreutils-stat +coreutils-id +gzip +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Yet another web front-end for rTorrent
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:  ruTorrent is a front-end for the popular Bittorrent client rTorrent.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-autotools
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent autotools plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a autotools Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-check_port
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent check_port plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a check_port Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-chunks
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent chunks plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a chunks Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-cookies
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent cookies plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a cookies Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-cpuload
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent cpuload plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a cpuload Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-create
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent create plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a create Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-data
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent data plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a data Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-datadir
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent datadir plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a datadir Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-diskspace
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent diskspace plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a diskspace Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-edit
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent edit plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a edit Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-erasedata
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent erasedata plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a erasedata Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-extratio
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent extratio plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a extratio Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-extsearch
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent extsearch plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a extsearch Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-feeds
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent feeds plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a feeds Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-filedrop
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent filedrop plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a filedrop Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-geoip
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent geoip plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a geoip Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_getdir
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _getdir plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _getdir Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-history
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent history plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a history Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-httprpc
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent httprpc plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a httprpc Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-ipad
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent ipad plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a ipad Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-loginmgr
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent loginmgr plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a loginmgr Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-lookat
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent lookat plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a lookat Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-mediainfo
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent mediainfo plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a mediainfo Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_noty
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _noty plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _noty Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_noty2
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _noty2 plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _noty2 Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-ratio
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent ratio plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a ratio Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-retrackers
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent retrackers plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a retrackers Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rpc
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rpc plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rpc Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rss
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rss plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rss Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rssurlrewrite
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rssurlrewrite plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rssurlrewrite Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-rutracker_check
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent rutracker_check plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a rutracker_check Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-scheduler
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent scheduler plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a scheduler Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-screenshots
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent +ffmpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent screenshots plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a screenshots Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-seedingtime
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent seedingtime plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a seedingtime Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-show_peers_like_wtorrent
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent show_peers_like_wtorrent plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a show_peers_like_wtorrent Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-source
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent source plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a source Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-_task
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent _task plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a _task Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-theme
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent theme plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a theme Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-throttle
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent throttle plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a throttle Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-tracklabels
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent tracklabels plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a tracklabels Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-trafic
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent trafic plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a trafic Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+Package: rutorrent-plugin-unpack
+Submenu: BitTorrent
+Version: 3.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rutorrent +unrar
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: ruTorrent unpack plugin
+Maintainer: Entware team, entware.wl500g.info
+Source: rutorrent-3.7.tar.bz2
+Type: ipkg
+Description:   This is a unpack Rutorrent plugin.
+https://github.com/Novik/ruTorrent
+Entware team, entware.wl500g.info
+@@
+
+

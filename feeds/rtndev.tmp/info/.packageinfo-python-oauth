@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/python-oauth/Makefile
+Package: python-oauth
+Submenu: Python
+Version: 1.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Library for OAuth 1.0a
+Maintainer: Entware team, entware.wl500g.info
+Source: oauth-1.0.1.tar.gz
+Type: ipkg
+Description:  Library for OAuth version 1.0a.
+http://code.google.com/p/oauth
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/xawtv/Makefile
+Package: xawtv
+Version: 3.103-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libncursesw +libv4l +libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: a small suite of V4L apps
+Maintainer: Entware team, entware.wl500g.info
+Source: xawtv-3.103.tar.bz2
+Type: ipkg
+Description:  A small suite of applications for V4L devices.
+https://www.kraxel.org/blog/linux/xawtv/
+Entware team, entware.wl500g.info
+@@
+
+

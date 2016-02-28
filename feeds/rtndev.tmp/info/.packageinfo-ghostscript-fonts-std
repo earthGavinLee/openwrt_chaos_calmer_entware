@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/ghostscript-fonts-std/Makefile
+Package: ghostscript-fonts-std
+Submenu: Printing
+Version: 8.11-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +fontconfig
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ghostscript, standard fonts
+Maintainer: Entware team, entware.wl500g.info
+Source: ghostscript-fonts-std-8.11.tar.gz
+Type: ipkg
+Description:  Ghostscript, standard fonts.
+@SF/gs-fonts
+Entware team, entware.wl500g.info
+@@
+
+

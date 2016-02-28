@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/fontconfig/Makefile
+Package: fontconfig
+Submenu: Printing
+Version: 2.11.94-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libfreetype +libexpat +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Fontconfig, configure and customize font access
+Maintainer: Entware team, entware.wl500g.info
+Source: fontconfig-2.11.94.tar.bz2
+Type: ipkg
+Description:  The Fontconfig package contains a library and support programs used for
+ configuring and customizing font access.
+http://fontconfig.org
+Entware team, entware.wl500g.info
+@@
+
+

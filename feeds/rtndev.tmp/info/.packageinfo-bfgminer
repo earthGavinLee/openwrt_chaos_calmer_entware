@@ -1,0 +1,29 @@
+Source-Makefile: feeds/rtndev/bfgminer/Makefile
+Package: bfgminer
+Version: 5.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libcurl +libpthread +jansson +PACKAGE_bfgminer_curses:libncurses +PACKAGE_bfgminer_libusb:libusb-1.0
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: BFGMiner (Bitcoin miner)
+Maintainer: Entware team, entware.wl500g.info
+Source: bfgminer-5.2.0.zip
+Type: ipkg
+Description: Modular Bitcoin CPU/GPU/FPGA miner in C
+http://luke.dashjr.org/programs/bfgminer
+Entware team, entware.wl500g.info
+@@
+Config:
+config PACKAGE_bfgminer_curses
+	bool "Build with curses TUI support"
+	depends on PACKAGE_bfgminer
+	default y
+config PACKAGE_bfgminer_libusb
+	bool "Build with libusb support (X6500 & ZTEX)"
+	depends on PACKAGE_bfgminer
+	default y
+@@
+
+

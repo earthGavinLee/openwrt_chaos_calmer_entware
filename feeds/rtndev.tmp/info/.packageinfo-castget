@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/castget/Makefile
+Package: castget
+Submenu: File Transfer
+Version: 1.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +glib2 +libxml2 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: net
+Category: Network
+Title: a command-line podcast downloader
+Maintainer: Entware team, entware.wl500g.info
+Source: castget-1.2.0.tar.bz2
+Type: ipkg
+Description:  castget is a simple, command-line based RSS enclosure downloader.
+ It is primarily intended for automatic, unattended downloading of podcasts.
+http://www.nongnu.org/castget
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/cron/Makefile
+Package: cron
+Version: 4.1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Vixie cron
+Maintainer: Entware team, entware.wl500g.info
+Source: cron_4.1.shar
+Type: ipkg
+Description:  Standart Vixie cron, with cron.d addition.
+ftp://ftp.isc.org/isc/cron
+Entware team, entware.wl500g.info
+@@
+
+

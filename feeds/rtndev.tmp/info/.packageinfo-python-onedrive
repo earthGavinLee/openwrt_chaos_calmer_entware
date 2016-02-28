@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/python-onedrive/Makefile
+Package: python-onedrive
+Submenu: Python
+Version: 15.7.3-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-requests +python-yaml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Python and CLI interface to MS OneDrive REST API v5.0
+Maintainer: Entware team, entware.wl500g.info
+Source: python-onedrive-15.7.3.tar.gz
+Type: ipkg
+Description:  Python and command-line interface for Microsoft LiveConnect OneDrive
+ REST API v5.0.
+https://github.com/mk-fg/python-onedrive
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/python-gevent/Makefile
+Package: python-gevent
+Submenu: Python
+Version: 0.13.8-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-greenlet +libevent2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: lang
+Category: Languages
+Title: Python networking library
+Maintainer: Entware team, entware.wl500g.info
+Source: gevent-0.13.8.tar.gz
+Type: ipkg
+Description:  Gevent is a coroutine-based Python networking library that uses greenlet
+ to provide a high-level synchronous API on top of the libevent event loop.
+http://www.gevent.org/
+Entware team, entware.wl500g.info
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/python-werkzeug/Makefile
+Package: python-werkzeug
+Submenu: Python
+Version: 0.10.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: python utilities for WSGI applications
+Maintainer: Entware team, entware.wl500g.info
+Source: Werkzeug-0.10.4.tar.gz
+Type: ipkg
+Description:  Werkzeug started as simple collection of various utilities for WSGI
+ applications and has become one of the most advanced WSGI utility modules.
+http://werkzeug.pocoo.org/
+Entware team, entware.wl500g.info
+@@
+
+

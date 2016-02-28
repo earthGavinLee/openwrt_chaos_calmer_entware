@@ -1,0 +1,24 @@
+Source-Makefile: feeds/rtndev/pagekite/Makefile
+Package: pagekite
+Version: 0.5.6d-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-openssl +openssl-util +python-socksipychain +net-tools-arp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: python
+Section: net
+Category: Network
+Title: Make localhost servers publicly visible.
+Maintainer: Entware team, entware.wl500g.info
+Source: pagekite-0.5.6d.tar.gz
+Type: ipkg
+Description:  PageKite is a system for running publicly visible servers (generally
+ web servers) on machines without a direct connection to the Internet,
+ such as mobile devices or computers behind restrictive firewalls.
+ PageKite works around NAT, firewalls and IP-address limitations by
+ using a combination of  tunnels and reverse proxies.
+http://pagekite.net
+Entware team, entware.wl500g.info
+@@
+
+

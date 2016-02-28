@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/balance/Makefile
+Package: balance
+Submenu: Web Servers/Proxies
+Version: 3.56-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: load balancing proxy
+Maintainer: Entware team, entware.wl500g.info
+Source: balance-3.56.tar.gz
+Type: ipkg
+Description:  Balance is successful load balancing solution being a simple but powerful
+ generic tcp proxy with round robin load balancing and failover mechanisms.
+http://www.inlab.de/balance.html
+Entware team, entware.wl500g.info
+@@
+
+

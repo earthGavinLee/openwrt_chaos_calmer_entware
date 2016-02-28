@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/transcode/Makefile
+Package: transcode
+Version: 1.1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: A/V transcoding suite
+Maintainer: Entware team, entware.wl500g.info
+Source: transcode-1.1.5.tar.bz2
+Type: ipkg
+Description:  Transcode is a suite of tools, all of which are command line utilities
+ for transcoding various video, audio, and container formats. Please note
+ it's compiled without any external recoding libraries because transcoding is
+ too heavy task for a router. Only few tools will be usefull, i.e. tcprobe.
+http://tcforge.berlios.de/
+Entware team, entware.wl500g.info
+@@
+
+

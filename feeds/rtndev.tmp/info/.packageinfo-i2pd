@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/i2pd/Makefile
+Package: i2pd
+Version: 0.10.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcryptoxx +boost-filesystem +boost-regex +boost-program_options +boost-date_time
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: simplified C++ implementation of I2P client
+Maintainer: Entware team, entware.wl500g.info
+Source: i2pd-0.10.0.tar.bz2
+Type: ipkg
+Description:  i2p router for Linux written on C++.
+https://github.com/orignal/i2pd
+Entware team, entware.wl500g.info
+@@
+
+

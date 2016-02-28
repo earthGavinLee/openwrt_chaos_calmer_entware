@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/nethack/Makefile
+Package: nethack
+Version: 3.4.3-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: games
+Category: Games
+Title: NetHack is a single player dungeon exploration game
+Maintainer: Entware team, entware.wl500g.info
+Source: nethack-343-src.tgz
+Type: ipkg
+Description:  Unlike many other Dungeons & Dragons-inspired games, the emphasis in
+ NetHack is on discovering the detail of the dungeon and not simply killing
+ everything in sight - in fact, killing everything in sight is a good way
+ to die quickly.
+http://www.nethack.org
+Entware team, entware.wl500g.info
+@@
+
+

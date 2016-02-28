@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/pvpgn/Makefile
+Package: pvpgn
+Version: 199.r577-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3 +libstdcpp +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A bnetd based gaming network server emulation project
+Maintainer: Entware team, entware.wl500g.info
+Source: pvpgn-199.r577.tar.bz2
+Type: ipkg
+Description:  The PvPGN is a bnetd based gaming network server emulation project.
+ It curently supports all Westwood Online clients (Tiberian Sun,
+ Red Alert 1/2, Renegade, Emperor, NOX) and all Battle.Net clients
+ (Diablo 1/2, Starcraft/Broodwar, Warcraft 2/3 ROC/TFT).
+http://pvpgn.berlios.de
+Entware team, entware.wl500g.info
+@@
+
+

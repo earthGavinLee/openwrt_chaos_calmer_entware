@@ -1,0 +1,19 @@
+Source-Makefile: feeds/oldports/hplip/Makefile
+Package: hplip
+Version: 3.15.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libtiff +libusb-compat +cups +sane-libs +dbus +python +libcupsimage
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: HP Linux Imaging and Printing
+Maintainer: 
+Source: hplip-3.15.7.tar.gz
+Type: ipkg
+Description: 	HPLIP is an HP developed solution for printing, scanning, and faxing with HP inkjet and laser based printers in Linux.
+http://sourceforge.net/projects/hplip/
+
+@@
+
+

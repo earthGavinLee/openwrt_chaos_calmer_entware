@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/mpdscribble/Makefile
+Package: mpdscribble
+Version: 0.23-20140213-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmpdclient +libsoup +libcurl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:libintl
+Section: sound
+Category: Sound
+Title: MPD player with Last.fm scrobbler
+Maintainer: Entware team, entware.wl500g.info
+Source: mpdscribble-0.23-20140213.tar.bz2
+Type: ipkg
+Description:  MPD scribble is a music player daemon client which submits information about
+ tracks being played to Last.fm.
+http://mpd.wikia.com/wiki/Client:Mpdscribble
+Entware team, entware.wl500g.info
+@@
+
+

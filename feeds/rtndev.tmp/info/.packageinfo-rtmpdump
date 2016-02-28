@@ -1,0 +1,36 @@
+Source-Makefile: feeds/rtndev/rtmpdump/Makefile
+Package: librtmp
+Version: 2.4-20121209-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: rtmpdump is a toolkit for RTMP streams
+Maintainer: Entware team, entware.wl500g.info
+Source: rtmpdump-2.3.tgz
+Type: ipkg
+Description:  librtmp is a RTMPDump Real-Time Messaging Protocol API
+http://rtmpdump.mplayerhq.hu/
+Entware team, entware.wl500g.info
+@@
+
+Package: rtmpdump
+Version: 2.4-20121209-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl +libpthread +librtmp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: rtmpdump is a toolkit for RTMP streams
+Maintainer: Entware team, entware.wl500g.info
+Source: rtmpdump-2.3.tgz
+Type: ipkg
+Description:  rtmpdump is a toolkit for RTMP streams. All forms of RTMP are supported.
+http://rtmpdump.mplayerhq.hu/
+Entware team, entware.wl500g.info
+@@
+
+

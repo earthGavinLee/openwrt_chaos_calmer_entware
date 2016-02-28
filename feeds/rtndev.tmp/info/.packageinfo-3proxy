@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/3proxy/Makefile
+Package: 3proxy
+Submenu: Web Servers/Proxies
+Version: 0.7.1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: 3proxy free proxy server
+Maintainer: Entware team, entware.wl500g.info
+Source: 3proxy-0.7.1.2.tgz
+Type: ipkg
+Description:  3proxy is universal proxy server. It can be used to provide internal users
+ with fully controllable access to external resources or to provide external
+ users with access to internal resources.
+http://www.3proxy.ru
+Entware team, entware.wl500g.info
+@@
+
+

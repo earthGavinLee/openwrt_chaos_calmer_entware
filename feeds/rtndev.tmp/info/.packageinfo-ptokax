@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/ptokax/Makefile
+Package: ptokax
+Submenu: P2P
+Version: 0.5.1.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua +libpthread +zlib +libstdcpp +librt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: DC hub
+Maintainer: Entware team, entware.wl500g.info
+Source: 0.5.1.0-nix-src.tgz
+Type: ipkg
+Description:  PtokaX Direct Connect Hub is a multi-platform server application
+ for Neo-Modus Direct Connect Peer-To-Peer sharing network.
+http://www.czdc.org/PtokaX/
+Entware team, entware.wl500g.info
+@@
+
+

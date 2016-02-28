@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/mkvtoolnix/Makefile
+Package: mkvtoolnix
+Version: 4.2.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +boost-filesystem +boost-regex +libbz2 +libexpat +libflac +liblzo +libmagic +libmatroska +libvorbis
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: tools for Matroska files
+Maintainer: Entware team, entware.wl500g.info
+Source: mkvtoolnix-4.2.0.tar.bz2
+Type: ipkg
+Description:  A set of tools to create, alter and inspect Matroska files.
+http://matroska.org/
+Entware team, entware.wl500g.info
+@@
+
+

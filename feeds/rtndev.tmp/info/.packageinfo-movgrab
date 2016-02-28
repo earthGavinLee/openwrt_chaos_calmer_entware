@@ -1,0 +1,20 @@
+Source-Makefile: feeds/rtndev/movgrab/Makefile
+Package: movgrab
+Version: 1.2.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: movgrab is a commandline video downloader
+Maintainer: Entware team, entware.wl500g.info
+Source: movgrab-1.2.1.tar.gz
+Type: ipkg
+Description:  Movgrab is a command line tool for downloading video clips 
+ from websites such as YouTube, Daily Motion, Break.com, Vimeo, Blip.tv, Liveleak and others.
+https://sites.google.com/site/columscode/home/movgrab
+Entware team, entware.wl500g.info
+@@
+
+

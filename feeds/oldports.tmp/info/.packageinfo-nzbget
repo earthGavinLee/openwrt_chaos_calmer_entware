@@ -1,0 +1,20 @@
+Source-Makefile: feeds/oldports/nzbget/Makefile
+Package: nzbget
+Submenu: NNTP
+Version: 15.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libopenssl +libncurses +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Binary newsgrabber for nzb-files
+Maintainer: Artur Wronowski <arteqw@gmail.com>
+Source: nzbget-15.0-src.tar.gz
+Type: ipkg
+Description: A command-line client/server based binary newsgrabber for nzb-files.
+http://nzbget.sourceforge.net/
+Artur Wronowski <arteqw@gmail.com>
+@@
+
+

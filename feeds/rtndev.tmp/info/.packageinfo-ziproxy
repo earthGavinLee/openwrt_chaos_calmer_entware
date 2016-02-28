@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/ziproxy/Makefile
+Package: ziproxy
+Submenu: Web Servers/Proxies
+Version: 3.3.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +giflib +libjpeg +libpng +zlib +libsasl2 +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: compressing HTTP proxy server
+Maintainer: Entware team, entware.wl500g.info
+Source: ziproxy-3.3.1.tar.bz2
+Type: ipkg
+Description:  ziproxy is a forwarding, non-caching and compressing HTTP proxy server.
+ Basically it squeezes images by converting them to lower quality JPEGs
+ and compresses (gzip) HTML and other text-like data.
+http://ziproxy.sourceforge.net
+Entware team, entware.wl500g.info
+@@
+
+

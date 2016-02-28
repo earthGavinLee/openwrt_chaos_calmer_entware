@@ -1,0 +1,21 @@
+Source-Makefile: feeds/rtndev/mediafire-fuse/Makefile
+Package: mediafire-fuse
+Submenu: Filesystem
+Version: 0.6-20150702-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +libfuse +jansson
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: mediafire account utilities
+Maintainer: Entware team, entware.wl500g.info
+Source: mediafire-fuse-0.6-20150702.tar.bz2
+Type: ipkg
+Description:  A simple shell for a mediafire account and fuse module that is able to mount
+ the mediafire share locally.
+https://github.com/TurboGit/mediafire-fuse
+Entware team, entware.wl500g.info
+@@
+
+

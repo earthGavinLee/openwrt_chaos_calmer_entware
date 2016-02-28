@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/parted/Makefile
+Package: parted
+Submenu: disc
+Version: 3.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblkid
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: manipulates partition tables
+Maintainer: Entware team, entware.wl500g.info
+Source: parted-3.2.tar.xz
+Type: ipkg
+Description:  GNU Parted manipulates partition tables. This is useful for creating space for
+ new operating systems, reorganizing disk usage, copying data on hard disks and
+ disk imaging.
+http://www.gnu.org/software/parted/
+Entware team, entware.wl500g.info
+@@
+
+

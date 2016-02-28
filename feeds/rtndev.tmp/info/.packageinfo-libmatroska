@@ -1,0 +1,19 @@
+Source-Makefile: feeds/rtndev/libmatroska/Makefile
+Package: libmatroska
+Version: 1.4.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libebml
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: MKV container format library
+Maintainer: Entware team, entware.wl500g.info
+Source: libmatroska-1.4.2.tar.bz2
+Type: ipkg
+Description:  libmatroska - extensible open standard Audio/Video container format library
+http://matroska.org/
+Entware team, entware.wl500g.info
+@@
+
+

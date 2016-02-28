@@ -1,0 +1,20 @@
+Source-Makefile: feeds/oldports/gw6c/Makefile
+Package: gw6c
+Version: 6.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: IPv6 tunnel client software
+Maintainer: 
+Source: gw6c-6_0-RELEASE-src.tar
+Type: ipkg
+Description:   Client to configure an IPv6 tunnel to
+  Hexago/freenet6/go6.net's migration broker.
+http://www.go6.net
+
+@@
+
+

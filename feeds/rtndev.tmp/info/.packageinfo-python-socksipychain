@@ -1,0 +1,22 @@
+Source-Makefile: feeds/rtndev/python-socksipychain/Makefile
+Package: python-socksipychain
+Submenu: Python
+Version: 2.0.12-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Chaining support for socksipy
+Maintainer: Entware team, entware.wl500g.info
+Source: SocksipyChain-2.0.12.tar.gz
+Type: ipkg
+Description:  Chaining support for socksipy - a Python SOCKS client module. It provides
+ a socket-like interface that supports connections to any TCP service through
+ the use of a SOCKS4, SOCKS5 or HTTP proxy.
+https://pagekite.net/wiki/Floss/PySocksipyChain/
+Entware team, entware.wl500g.info
+@@
+
+
